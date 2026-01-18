@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <canvas id="fluidBg" class="fluid-bg"></canvas>
     <nav class="nav">
         <div class="nav-inner">
-            <a href="index.html" class="nav-logo">Hassan Rezaee</a>
+            <a href="/" class="nav-logo">Hassan Rezaee</a>
             <div class="nav-right">
                 <div class="nav-links">
-                    <a href="index.html">Home</a>
+                    <a href="/">Home</a>
                     <a href="research.html" class="active">Research</a>
                     <a href="mailto:hassan.rezaee65@gmail.com">Contact</a>
                 </div>
@@ -226,6 +227,76 @@
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
         });
+
+        // Fluid background animation
+        const canvas = document.getElementById('fluidBg');
+        const ctx = canvas.getContext('2d');
+        
+        let width, height;
+        let time = 0;
+        
+        function resize() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = document.body.scrollHeight;
+        }
+        
+        window.addEventListener('resize', resize);
+        resize();
+        
+        function noise(x, y, t) {
+            return Math.sin(x * 0.01 + t) * Math.cos(y * 0.01 + t * 0.5) * 
+                   Math.sin((x + y) * 0.005 + t * 0.3) * 
+                   Math.cos(x * 0.008 - t * 0.2);
+        }
+        
+        function draw() {
+            const isDark = html.getAttribute('data-theme') === 'dark';
+            
+            ctx.fillStyle = isDark ? '#0a0a0b' : '#fafafa';
+            ctx.fillRect(0, 0, width, height);
+            
+            const baseColor = isDark ? [96, 165, 250] : [37, 99, 235];
+            const altColor = isDark ? [167, 139, 250] : [99, 102, 241];
+            
+            for (let i = 0; i < 5; i++) {
+                ctx.beginPath();
+                
+                const offsetX = noise(i * 100, 0, time * 0.3) * 200;
+                const offsetY = noise(0, i * 100, time * 0.3) * 200;
+                
+                const gradient = ctx.createRadialGradient(
+                    width * 0.3 + offsetX + i * 150, 
+                    height * 0.2 + offsetY + i * 200, 
+                    0,
+                    width * 0.3 + offsetX + i * 150, 
+                    height * 0.2 + offsetY + i * 200, 
+                    400 + Math.sin(time + i) * 100
+                );
+                
+                const color = i % 2 === 0 ? baseColor : altColor;
+                gradient.addColorStop(0, `rgba(${color[0]}, ${color[1]}, ${color[2]}, ${isDark ? 0.03 : 0.02})`);
+                gradient.addColorStop(1, 'transparent');
+                
+                ctx.fillStyle = gradient;
+                ctx.arc(
+                    width * 0.3 + offsetX + i * 150, 
+                    height * 0.2 + offsetY + i * 200, 
+                    400 + Math.sin(time + i) * 100, 
+                    0, 
+                    Math.PI * 2
+                );
+                ctx.fill();
+            }
+            
+            time += 0.008;
+            requestAnimationFrame(draw);
+        }
+        
+        draw();
+        
+        new ResizeObserver(() => {
+            canvas.height = document.body.scrollHeight;
+        }).observe(document.body);
     </script>
 </body>
 </html>

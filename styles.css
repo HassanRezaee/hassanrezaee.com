@@ -68,49 +68,51 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.3;
+    opacity: 0.5;
     pointer-events: none;
     transition: opacity 0.3s;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
 
 /* Home page */
 body[data-page="home"]::before {
-    background-image: url('images/bg-home.png');
+    background-image: url('images/bg-home.jpg');
 }
 
 /* Work page */
 body[data-page="work"]::before {
-    background-image: url('images/bg-work.png');
+    background-image: url('images/bg-work.jpg');
 }
 
 /* AI page */
 body[data-page="ai"]::before {
-    background-image: url('images/bg-ai.png');
+    background-image: url('images/bg-ai.jpg');
 }
 
 /* Privacy page */
 body[data-page="privacy"]::before {
-    background-image: url('images/bg-privacy.png');
+    background-image: url('images/bg-privacy.jpg');
 }
 
 /* Research page */
 body[data-page="research"]::before {
-    background-image: url('images/bg-research.png');
+    background-image: url('images/bg-research.jpg');
 }
 
 /* Pricing page */
 body[data-page="pricing"]::before {
-    background-image: url('images/bg-pricing.png');
+    background-image: url('images/bg-pricing.jpg');
 }
 
 /* Contact page - reuse home image */
 body[data-page="contact"]::before {
-    background-image: url('images/bg-home.png');
+    background-image: url('images/bg-home.jpg');
 }
 
 /* Dark mode - slightly reduce opacity but still visible */
 [data-theme="dark"] body::before {
-    opacity: 0.2;
+    opacity: 0.4;
 }
 
 /* ========================================

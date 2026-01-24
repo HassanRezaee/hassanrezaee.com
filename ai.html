@@ -66,6 +66,7 @@
                         <li>Define metrics (task success, faithfulness, safety, latency, cost).</li>
                         <li>Add regression tests so quality doesn't drift.</li>
                     </ul>
+                    <p class="card__text mt-2" style="font-size: 0.8125rem; color: var(--text-muted);"><strong>Deliverables:</strong> Test set + harness + metrics + regression gates + report + recommended next steps.</p>
                 </div>
 
                 <div class="card mb-3">
@@ -126,10 +127,23 @@
 
             <section class="section">
                 <div class="section__header">
+                    <p class="section__title">Where LLMs are a bad fit</p>
+                </div>
+                <ul class="capabilities">
+                    <li>Simple rule-based logic or structured data extraction where regex/parsers are faster and more reliable.</li>
+                    <li>High-frequency, low-latency operations where cost and speed matter more than reasoning.</li>
+                    <li>Deterministic workflows where exact reproducibility and auditability are required.</li>
+                </ul>
+            </section>
+
+            <div class="divider"></div>
+
+            <section class="section">
+                <div class="section__header">
                     <p class="section__title">Tooling I'm comfortable with</p>
                 </div>
                 <ul class="capabilities">
-                    <li>Parameter-efficient fine-tuning, mixed precision, multi-node training.</li>
+                    <li>Parameter-efficient fine-tuning, mixed precision, multi-node GPU training, deployable inference artifacts.</li>
                     <li>Azure ML + Databricks + distributed data pipelines.</li>
                     <li>Evaluation harnesses, CI/CD, and A/B testing.</li>
                 </ul>

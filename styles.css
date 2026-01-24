@@ -53,6 +53,52 @@ body {
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+
+/* Background images */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+/* Home page - natural watercolor */
+body[data-page="home"]::before {
+    background-image: url('images/bg-natural.png');
+}
+
+/* Work & AI pages - tech network */
+body[data-page="work"]::before,
+body[data-page="ai"]::before {
+    background-image: url('images/bg-tech.png');
+}
+
+/* Privacy & Research pages - watercolor */
+body[data-page="privacy"]::before,
+body[data-page="research"]::before {
+    background-image: url('images/bg-watercolor.png');
+}
+
+/* Pricing & Contact pages - natural */
+body[data-page="pricing"]::before,
+body[data-page="contact"]::before {
+    background-image: url('images/bg-natural.png');
+}
+
+/* Dark mode - reduce opacity */
+[data-theme="dark"] body::before {
+    opacity: 0.08;
 }
 
 /* ========================================

@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hassan Rezaee — Privacy-first software. Built to ship.</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Hassan Rezaee — Privacy-first software and measurable AI systems</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <canvas id="fluidBg" class="fluid-bg"></canvas>
     <nav class="nav">
-        <div class="nav-inner">
-            <a href="./" class="nav-logo">Hassan Rezaee</a>
-            <div class="nav-right">
-                <div class="nav-links">
-                    <a href="./" class="active">Home</a>
-                    <a href="research.html">Research</a>
-                    <a href="mailto:hassan.rezaee65@gmail.com">Contact</a>
-                </div>
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                    <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <div class="nav__inner">
+            <a href="./" class="nav__logo">Hassan Rezaee</a>
+            <button class="nav__menu-btn" id="menuBtn" aria-label="Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="nav__links" id="navLinks">
+                <a href="./" class="nav__link nav__link--active">Home</a>
+                <a href="work.html" class="nav__link">Work</a>
+                <a href="ai.html" class="nav__link">AI / LLMs</a>
+                <a href="privacy.html" class="nav__link">Privacy-First</a>
+                <a href="research.html" class="nav__link">Research</a>
+                <a href="pricing.html" class="nav__link">Pricing</a>
+                <a href="contact.html" class="nav__link">Contact</a>
+                <button class="nav__toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="12" cy="12" r="5"></circle>
                         <line x1="12" y1="1" x2="12" y2="3"></line>
                         <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -41,261 +46,151 @@
     </nav>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <span class="hero-label">Privacy-first software. Built to ship.</span>
-                    <h1>Hi, I'm Hassan.</h1>
-                    <p class="hero-tagline">I build products end-to-end, from problem definition to a working, reliable system people can use. I care about speed, simplicity, and trust—especially when the workflow touches sensitive or regulated contexts.</p>
-                    <p class="hero-highlight">I help teams and founders ship software that's <strong>fast, reliable, and privacy-conscious</strong>.</p>
-                    <div class="hero-links">
-                        <a href="https://github.com/hassanrezaee" target="_blank" class="btn btn-primary">
-                            GitHub
-                        </a>
-                        <a href="https://www.linkedin.com/in/hassan-rezaee" target="_blank" class="btn btn-secondary">
-                            LinkedIn
-                        </a>
-                        <a href="mailto:hassan.rezaee65@gmail.com" class="btn btn-secondary">
-                            Contact
-                        </a>
+        <div class="container">
+            <p class="positioning">I ship privacy-first software and measurable AI systems.</p>
+
+            <section class="hero">
+                <h1 class="hero__headline">Full-stack software and AI systems, built privacy-first.</h1>
+                <p class="hero__subhead">
+                    I ship small products end-to-end (frontend, backend, cloud) at an affordable scope.<br>
+                    I also build serious AI: predictive modeling, time-series, and LLM evaluation + fine-tuning.
+                </p>
+                <p class="hero__proof">Senior Data Scientist in Montreal, 7+ years in ML, building large-scale pipelines in Python/PySpark/Databricks/Azure ML.</p>
+                <div class="hero__ctas">
+                    <a href="contact.html" class="btn btn--primary">Book a 15-minute call</a>
+                    <a href="pricing.html" class="btn btn--secondary">See packages</a>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section__header">
+                    <p class="section__title">What I do</p>
+                </div>
+                <div class="cards cards--cols-3">
+                    <div class="card">
+                        <h3 class="card__title">Full-stack builds</h3>
+                        <p class="card__text">MVPs, internal tools, and small SaaS products, shipped with clean UX and reliable deployment.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">AI systems</h3>
+                        <p class="card__text">Forecasting and predictive modeling, evaluation-first experimentation, and production-grade model delivery.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">GenAI / LLMs</h3>
+                        <p class="card__text">LLM evaluation harnesses, fine-tuning (LoRA/QLoRA), domain adaptation, RAG, and safety/guardrails.</p>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="images/profile-1.jpeg" alt="Hassan Rezaee">
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="section">
-            <div class="section-header">
-                <h2>Services</h2>
-                <p class="section-subtitle">I help teams build software that works—and keeps working.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">⚡</div>
-                    <h3>Full-Stack Development</h3>
-                    <p>End-to-end product development from concept to deployment. Web apps, APIs, and internal tools built with modern stacks.</p>
+            <section class="section">
+                <div class="section__header">
+                    <p class="section__title">How I work</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🔒</div>
-                    <h3>Privacy-First Systems</h3>
-                    <p>Software for sensitive contexts—healthcare, finance, legal. Data minimization, clear boundaries, and compliant architecture.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🚀</div>
-                    <h3>MVP & Prototype Builds</h3>
-                    <p>Turn your idea into a working product fast. Focused scope, quick iterations, and something real to show users.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🛠️</div>
-                    <h3>Technical Consulting</h3>
-                    <p>Architecture reviews, tech stack decisions, and workflow optimization. Get clarity before you commit to building.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section-header">
-                <h2>AI Literacy for Clinicians</h2>
-            </div>
-            <div class="writing-feature">
-                <div class="writing-content">
-                    <p>Together with <strong>Katherine Gibb</strong>, I write about AI for mental health professionals—clinically-informed and technically-accurate. We publish regularly on our Substack, covering topics from practical AI applications to ethical considerations in therapeutic contexts.</p>
-                    <a href="https://therapistintheloop.substack.com/" target="_blank" class="btn btn-primary">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
-                        Therapist in the Loop
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section-header">
-                <h2>How I Build</h2>
-                <p class="section-subtitle">I like building products that feel calm and obvious to use. My default approach is:</p>
-            </div>
-            <div class="principles">
-                <div class="principle">
-                    <div class="principle-icon">→</div>
-                    <div>
-                        <strong>Start with the workflow, not the feature list.</strong>
-                        <p>The goal is fewer clicks and fewer mistakes.</p>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step__number">1</div>
+                        <p class="step__title">Scope</p>
+                        <p class="step__text">One outcome, one workflow, a tight boundary.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step__number">2</div>
+                        <p class="step__title">Build</p>
+                        <p class="step__text">Versioned, testable increments end-to-end.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step__number">3</div>
+                        <p class="step__title">Validate</p>
+                        <p class="step__text">Measurable criteria for AI. Real tasks for product.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step__number">4</div>
+                        <p class="step__title">Ship</p>
+                        <p class="step__text">Deploy, document, hand over or iterate.</p>
                     </div>
                 </div>
-                <div class="principle">
-                    <div class="principle-icon">→</div>
-                    <div>
-                        <strong>Minimize data collection.</strong>
-                        <p>If we don't need it, we don't store it.</p>
-                    </div>
-                </div>
-                <div class="principle">
-                    <div class="principle-icon">→</div>
-                    <div>
-                        <strong>Design for trust.</strong>
-                        <p>Clear boundaries, clear control, and predictable behavior.</p>
-                    </div>
-                </div>
-                <div class="principle">
-                    <div class="principle-icon">→</div>
-                    <div>
-                        <strong>Ship in tight loops.</strong>
-                        <p>Release small improvements, learn fast, and keep quality high.</p>
-                    </div>
-                </div>
-                <div class="principle">
-                    <div class="principle-icon">→</div>
-                    <div>
-                        <strong>Keep the system understandable.</strong>
-                        <p>Simple architecture beats clever complexity.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="section photo-section">
-            <img src="images/profile-2.jpeg" alt="Hassan Rezaee outdoors" class="full-photo">
-        </section>
+            <section class="section">
+                <div class="section__header">
+                    <p class="section__title">Capabilities</p>
+                </div>
+                <ul class="capabilities">
+                    <li>Python, SQL, PySpark, Databricks, Azure ML for end-to-end data + modeling pipelines.</li>
+                    <li>LLM fine-tuning and domain adaptation, including data synthesis, filtering, ablations, and QLoRA.</li>
+                    <li>Adapter-based parameter-efficient fine-tuning, mixed precision, multi-node GPU training, deployable inference artifacts.</li>
+                    <li>MLOps: CI/CD, Docker, evaluation harnesses, A/B test design and analysis.</li>
+                    <li>Applied statistics: time-series forecasting, Bayesian modeling, Gaussian processes, causal inference.</li>
+                </ul>
+            </section>
 
-        <section class="section section-muted">
-            <p class="aside-text">When I'm not at a screen, I'm usually outdoors—mountaineering, hiking, trekking, or road cycling.</p>
-        </section>
+            <section class="section">
+                <div class="section__header">
+                    <p class="section__title">Packages</p>
+                </div>
+                <div class="work-item">
+                    <h3 class="work-item__title">Small Build (MVP-Lite)</h3>
+                    <p class="work-item__desc">One core workflow, basic auth, deployment. Good for "small software done right."</p>
+                </div>
+                <div class="work-item">
+                    <h3 class="work-item__title">LLM Evaluation Sprint</h3>
+                    <p class="work-item__desc">Build an evaluation harness, test set, metrics, and regression gates before shipping any LLM feature.</p>
+                </div>
+                <div class="work-item">
+                    <h3 class="work-item__title">Forecasting / Predictive Modeling Sprint</h3>
+                    <p class="work-item__desc">Problem framing, features, baselines, model selection, and a reproducible evaluation pipeline.</p>
+                </div>
+                <div class="work-item">
+                    <h3 class="work-item__title">Privacy-First Engineering Add-On</h3>
+                    <p class="work-item__desc">Data minimization, access boundaries, auditability basics, and retention/deletion flows.</p>
+                </div>
+                <div class="mt-3">
+                    <a href="pricing.html" class="btn btn--secondary">See full pricing and deliverables →</a>
+                </div>
+            </section>
 
-        <section class="section">
-            <div class="section-header">
-                <h2>What You Can Expect</h2>
-            </div>
-            <p class="section-intro">If you work with me, you'll get someone who:</p>
-            <div class="expect-grid">
-                <div class="expect-item">
-                    <span class="expect-bullet">✓</span>
-                    Turns ambiguous requirements into <strong>clear specs and a shippable plan</strong>
+            <section class="section">
+                <div class="section__header">
+                    <p class="section__title">Selected work</p>
                 </div>
-                <div class="expect-item">
-                    <span class="expect-bullet">✓</span>
-                    Builds <strong>reliable, maintainable software</strong> (not prototypes that collapse later)
+                <div class="work-item">
+                    <h3 class="work-item__title">OneClickReceipts</h3>
+                    <p class="work-item__desc">Privacy-first receipt software for mental health practices. Product + engineering.</p>
                 </div>
-                <div class="expect-item">
-                    <span class="expect-bullet">✓</span>
-                    Cares about <strong>privacy and risk</strong> without turning everything into bureaucracy
+                <div class="work-item">
+                    <h3 class="work-item__title">Confidential enterprise work</h3>
+                    <p class="work-item__desc">AI and data systems in regulated / safety-critical contexts. Details available privately.</p>
                 </div>
-                <div class="expect-item">
-                    <span class="expect-bullet">✓</span>
-                    Communicates clearly, writes things down, and closes loops
-                </div>
-            </div>
-        </section>
-
-        <section class="section contact-section">
-            <div class="section-header">
-                <h2>Get in Touch</h2>
-                <p class="section-subtitle">If you want to collaborate, reach me here.</p>
-            </div>
-            <div class="contact-links">
-                <a href="mailto:hassan.rezaee65@gmail.com" class="contact-btn">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                    hassan.rezaee65@gmail.com
-                </a>
-                <a href="https://www.linkedin.com/in/hassan-rezaee" target="_blank" class="contact-btn secondary">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    LinkedIn
-                </a>
-                <a href="https://github.com/hassanrezaee" target="_blank" class="contact-btn secondary">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    GitHub
-                </a>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>© 2026 Hassan Rezaee</p>
+        <p class="footer__text">Montreal · English/French</p>
+        <div class="footer__links">
+            <a href="https://www.linkedin.com/in/hassan-rezaee" target="_blank" class="footer__link">LinkedIn</a>
+            <a href="mailto:hassan.rezaee65@gmail.com" class="footer__link">Email</a>
+        </div>
     </footer>
 
     <script>
+        // Theme toggle
         const toggle = document.getElementById('themeToggle');
         const html = document.documentElement;
-        
         const savedTheme = localStorage.getItem('theme') || 'light';
         html.setAttribute('data-theme', savedTheme);
         
         toggle.addEventListener('click', () => {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            const newTheme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
         });
 
-        // Fluid background animation
-        const canvas = document.getElementById('fluidBg');
-        const ctx = canvas.getContext('2d');
-        
-        let width, height;
-        let time = 0;
-        
-        function resize() {
-            width = canvas.width = window.innerWidth;
-            height = canvas.height = document.body.scrollHeight;
-        }
-        
-        window.addEventListener('resize', resize);
-        resize();
-        
-        function noise(x, y, t) {
-            return Math.sin(x * 0.01 + t) * Math.cos(y * 0.01 + t * 0.5) * 
-                   Math.sin((x + y) * 0.005 + t * 0.3) * 
-                   Math.cos(x * 0.008 - t * 0.2);
-        }
-        
-        function draw() {
-            const isDark = html.getAttribute('data-theme') === 'dark';
-            
-            ctx.fillStyle = isDark ? '#0a0a0b' : '#fafafa';
-            ctx.fillRect(0, 0, width, height);
-            
-            const baseColor = isDark ? [96, 165, 250] : [37, 99, 235];
-            const altColor = isDark ? [167, 139, 250] : [99, 102, 241];
-            
-            for (let i = 0; i < 5; i++) {
-                ctx.beginPath();
-                
-                const offsetX = noise(i * 100, 0, time * 0.3) * 200;
-                const offsetY = noise(0, i * 100, time * 0.3) * 200;
-                
-                const gradient = ctx.createRadialGradient(
-                    width * 0.3 + offsetX + i * 150, 
-                    height * 0.2 + offsetY + i * 200, 
-                    0,
-                    width * 0.3 + offsetX + i * 150, 
-                    height * 0.2 + offsetY + i * 200, 
-                    400 + Math.sin(time + i) * 100
-                );
-                
-                const color = i % 2 === 0 ? baseColor : altColor;
-                gradient.addColorStop(0, `rgba(${color[0]}, ${color[1]}, ${color[2]}, ${isDark ? 0.03 : 0.02})`);
-                gradient.addColorStop(1, 'transparent');
-                
-                ctx.fillStyle = gradient;
-                ctx.arc(
-                    width * 0.3 + offsetX + i * 150, 
-                    height * 0.2 + offsetY + i * 200, 
-                    400 + Math.sin(time + i) * 100, 
-                    0, 
-                    Math.PI * 2
-                );
-                ctx.fill();
-            }
-            
-            time += 0.008;
-            requestAnimationFrame(draw);
-        }
-        
-        draw();
-        
-        new ResizeObserver(() => {
-            canvas.height = document.body.scrollHeight;
-        }).observe(document.body);
+        // Mobile menu
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('nav__links--open');
+        });
     </script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f7086275d115490a9a436e477aad2848"}'></script><!-- End Cloudflare Web Analytics -->
 </body>

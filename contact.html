@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Hassan Rezaee</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__inner">
+            <a href="./" class="nav__logo">Hassan Rezaee</a>
+            <button class="nav__menu-btn" id="menuBtn" aria-label="Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="nav__links" id="navLinks">
+                <a href="./" class="nav__link">Home</a>
+                <a href="work.html" class="nav__link">Work</a>
+                <a href="ai.html" class="nav__link">AI / LLMs</a>
+                <a href="privacy.html" class="nav__link">Privacy-First</a>
+                <a href="research.html" class="nav__link">Research</a>
+                <a href="pricing.html" class="nav__link">Pricing</a>
+                <a href="contact.html" class="nav__link nav__link--active">Contact</a>
+                <button class="nav__toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <p class="positioning">I ship privacy-first software and measurable AI systems.</p>
+
+            <section class="hero">
+                <h1 class="hero__headline">Let's build something real.</h1>
+                <p class="page-intro">Tell me what you're trying to ship, the timeline you have in mind, and whether privacy constraints or AI are part of the requirements.</p>
+            </section>
+
+            <section class="section">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-item__label">Email</span>
+                        <span class="contact-item__value"><a href="mailto:hassan.rezaee65@gmail.com">hassan.rezaee65@gmail.com</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-item__label">LinkedIn</span>
+                        <span class="contact-item__value"><a href="https://www.linkedin.com/in/hassan-rezaee" target="_blank">linkedin.com/in/hassan-rezaee</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-item__label">Location</span>
+                        <span class="contact-item__value">Montreal (EN/FR)</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer__text">Montreal · English/French</p>
+        <div class="footer__links">
+            <a href="https://www.linkedin.com/in/hassan-rezaee" target="_blank" class="footer__link">LinkedIn</a>
+            <a href="mailto:hassan.rezaee65@gmail.com" class="footer__link">Email</a>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+        
+        toggle.addEventListener('click', () => {
+            const newTheme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('nav__links--open');
+        });
+    </script>
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f7086275d115490a9a436e477aad2848"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research — Hassan Rezaee</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <canvas id="fluidBg" class="fluid-bg"></canvas>
     <nav class="nav">
-        <div class="nav-inner">
-            <a href="./" class="nav-logo">Hassan Rezaee</a>
-            <div class="nav-right">
-                <div class="nav-links">
-                    <a href="./">Home</a>
-                    <a href="research.html" class="active">Research</a>
-                    <a href="mailto:hassan.rezaee65@gmail.com">Contact</a>
-                </div>
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                    <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <div class="nav__inner">
+            <a href="./" class="nav__logo">Hassan Rezaee</a>
+            <button class="nav__menu-btn" id="menuBtn" aria-label="Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="nav__links" id="navLinks">
+                <a href="./" class="nav__link">Home</a>
+                <a href="work.html" class="nav__link">Work</a>
+                <a href="ai.html" class="nav__link">AI / LLMs</a>
+                <a href="privacy.html" class="nav__link">Privacy-First</a>
+                <a href="research.html" class="nav__link nav__link--active">Research</a>
+                <a href="pricing.html" class="nav__link">Pricing</a>
+                <a href="contact.html" class="nav__link">Contact</a>
+                <button class="nav__toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="12" cy="12" r="5"></circle>
                         <line x1="12" y1="1" x2="12" y2="3"></line>
                         <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -40,263 +45,190 @@
         </div>
     </nav>
 
-    <main class="research-page">
-        <section class="page-hero">
-            <h1>Research & CV</h1>
-            <p class="page-subtitle">Academic background, publications, and professional experience.</p>
-        </section>
+    <main>
+        <div class="container">
+            <p class="positioning">I ship privacy-first software and measurable AI systems.</p>
 
-        <section class="section">
-            <div class="section-header">
-                <h2>Snapshot</h2>
-            </div>
-            <div class="snapshot-grid">
-                <div class="snapshot-item">
-                    <span class="snapshot-label">Current Role</span>
-                    <span class="snapshot-value">Data Scientist at CAE</span>
-                </div>
-                <div class="snapshot-item">
-                    <span class="snapshot-label">Research Footprint</span>
-                    <span class="snapshot-value">13+ Publications</span>
-                </div>
-                <div class="snapshot-item">
-                    <span class="snapshot-label">Citations</span>
-                    <span class="snapshot-value">280+ on Google Scholar</span>
-                </div>
-                <div class="snapshot-item">
-                    <span class="snapshot-label">Core Areas</span>
-                    <span class="snapshot-value">Applied Statistics, Spatial Statistics, ML, Geostatistics</span>
-                </div>
-            </div>
-        </section>
+            <section class="hero">
+                <h1 class="hero__headline">Research</h1>
+                <p class="page-intro">Academic background, publications, and what I'm open to.</p>
+            </section>
 
-        <section class="section">
-            <div class="section-header">
-                <h2>Experience</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-period">Current</span>
-                        <h3>Data Scientist — CAE</h3>
-                        <span class="timeline-location">Montréal, Canada</span>
-                        <p>Working on applied ML/statistical modeling and building systems that are robust and usable in production contexts.</p>
-                    </div>
+            <section class="section research-focus">
+                <div class="section__header">
+                    <p class="section__title">Research focus</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-period">Postdoc</span>
-                        <h3>Postdoctoral Researcher — Polytechnique Montréal</h3>
-                        <span class="timeline-location">Montréal, Canada</span>
-                        <p>Research on spatial statistics and network-based crash count modeling.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-period">PhD</span>
-                        <h3>PhD Student — Polytechnique Montréal</h3>
-                        <span class="timeline-location">Montréal, Canada</span>
-                        <p>Mineral Engineering with focus on Geostatistics.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-period">Internship</span>
-                        <h3>Geologist Intern — TotalEnergies</h3>
-                        <span class="timeline-location">Pau, France</span>
-                        <p>Reservoir Modeling & Characterization.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section-header">
-                <h2>Publications</h2>
-            </div>
-            <div class="pub-links">
-                <a href="https://scholar.google.com/citations?user=PuLdWE8AAAAJ" target="_blank" class="btn btn-primary">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
-                    Google Scholar
-                </a>
-                <a href="https://www.researchgate.net/profile/Hassan-Rezaee" target="_blank" class="btn btn-secondary">
-                    ResearchGate
-                </a>
-            </div>
-
-            <div class="pub-category">
-                <h3>Crash Counts on Networks</h3>
-                <ul class="pub-list">
-                    <li class="pub-item">
-                        <span class="pub-year">2022</span>
-                        <span class="pub-title">A process convolution model for crash count data on a network</span>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2022</span>
-                        <span class="pub-title">A Process Convolution Model for Crash Count Data on a Network</span>
-                    </li>
+                <p style="color: var(--text-secondary); font-size: 0.9375rem;">I'm interested in applied research at the intersection of:</p>
+                <ul>
+                    <li>LLM evaluation and reliability</li>
+                    <li>Domain adaptation and efficient fine-tuning</li>
+                    <li>Predictive modeling and time-series</li>
+                    <li>Applied statistics and Bayesian methods</li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="pub-category">
-                <h3>Geostatistics & Simulation</h3>
-                <ul class="pub-list">
-                    <li class="pub-item">
-                        <span class="pub-year">2018</span>
-                        <span class="pub-title">Directional hydrostratigraphic units simulation using MCP algorithm</span>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2018</span>
-                        <span class="pub-title">Calibration of categorical simulations by evolutionary gradual deformation method</span>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2017</span>
-                        <span class="pub-title">Integration of multiple soft data sets in MPS through multinomial logistic regression: a case study of gas hydrates</span>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2015</span>
-                        <span class="pub-title">Feature-preserving interpolation and filtering of environmental time series</span>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2014</span>
-                        <span class="pub-title">Multiple-point geostatistical simulation using enriched pattern databases</span>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2014</span>
-                        <span class="pub-title">Multiple-point geostatistical simulation of dykes… Sungun porphyry copper system, Iran</span>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2013</span>
-                        <span class="pub-title">Multiple-Point Geostatistical Simulation Using the Bunch-Pasting Direct Sampling Method</span>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2012</span>
-                        <span class="pub-title">On the reduction of the ordinary kriging smoothing effect</span>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2011</span>
-                        <span class="pub-title">Accounting for Secondary Variable for the Classification of Mineral Resources using Cokriging…</span>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2011</span>
-                        <span class="pub-title">The Application of Multiple-Point Geostatistics in the Modeling of Dike…</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
+            <section class="section">
+                <div class="collab-box">
+                    <h3>Open to collaborations</h3>
+                    <p style="color: var(--text-secondary);">I'm open to:</p>
+                    <ul>
+                        <li>Co-authoring applied ML/LLM papers with practitioners or researchers</li>
+                        <li>Industry–academia collaborations with real data constraints</li>
+                        <li>Building reproducible eval benchmarks for domain-specific LLM use</li>
+                    </ul>
+                    <p class="mt-3" style="color: var(--text-secondary);"><strong>If you reach out, include:</strong></p>
+                    <ul>
+                        <li>3–5 sentence problem statement</li>
+                        <li>What data exists (or what can be simulated)</li>
+                        <li>What "success" would look like (metric, benchmark, or deployment)</li>
+                    </ul>
+                </div>
+            </section>
 
-        <section class="section">
-            <div class="section-header">
-                <h2>Skills</h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <h3>Statistical Modeling</h3>
-                    <p>Applied/spatial statistics, network/spatio-temporal modeling</p>
+            <div class="divider"></div>
+
+            <section class="section">
+                <div class="section__header">
+                    <p class="section__title">Education</p>
                 </div>
-                <div class="skill-item">
-                    <h3>Machine Learning</h3>
-                    <p>Data engineering for production-grade pipelines</p>
+                <p style="color: var(--text-secondary); font-size: 0.9375rem;">PhD in Geostatistics — Polytechnique Montréal</p>
+            </section>
+
+            <section class="section">
+                <div class="section__header">
+                    <p class="section__title">Experience</p>
                 </div>
-                <div class="skill-item">
-                    <h3>Software Engineering</h3>
-                    <p>Privacy-aware design and reliability-minded engineering</p>
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <span class="timeline__period">Current</span>
+                        <h3 class="timeline__title">Data Scientist — CAE</h3>
+                        <span class="timeline__location">Montréal, Canada</span>
+                        <p class="timeline__desc">Applied ML/statistical modeling and production systems.</p>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <span class="timeline__period">Postdoc</span>
+                        <h3 class="timeline__title">Postdoctoral Researcher — Polytechnique Montréal</h3>
+                        <span class="timeline__location">Montréal, Canada</span>
+                        <p class="timeline__desc">Spatial statistics and network-based crash count modeling.</p>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <span class="timeline__period">PhD</span>
+                        <h3 class="timeline__title">PhD Student — Polytechnique Montréal</h3>
+                        <span class="timeline__location">Montréal, Canada</span>
+                        <p class="timeline__desc">Mineral Engineering, focus on Geostatistics.</p>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <span class="timeline__period">Internship</span>
+                        <h3 class="timeline__title">Geologist Intern — TotalEnergies</h3>
+                        <span class="timeline__location">Pau, France</span>
+                        <p class="timeline__desc">Reservoir Modeling & Characterization.</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <div class="divider"></div>
+
+            <section class="section">
+                <div class="section__header">
+                    <p class="section__title">Publications</p>
+                </div>
+                <div class="pub-links">
+                    <a href="https://scholar.google.com/citations?user=PuLdWE8AAAAJ" target="_blank" class="btn btn--primary">Google Scholar</a>
+                    <a href="https://www.researchgate.net/profile/Hassan-Rezaee" target="_blank" class="btn btn--secondary">ResearchGate</a>
+                </div>
+
+                <div class="pub-category">
+                    <h3>Crash Counts on Networks</h3>
+                    <ul class="pub-list">
+                        <li class="pub-item">
+                            <span class="pub-year">2022</span>
+                            <span class="pub-title">A process convolution model for crash count data on a network</span>
+                        </li>
+                        <li class="pub-item">
+                            <span class="pub-year">2022</span>
+                            <span class="pub-title">A Process Convolution Model for Crash Count Data on a Network</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pub-category">
+                    <h3>Geostatistics & Simulation</h3>
+                    <ul class="pub-list">
+                        <li class="pub-item">
+                            <span class="pub-year">2018</span>
+                            <span class="pub-title">Directional hydrostratigraphic units simulation using MCP algorithm</span>
+                        </li>
+                        <li class="pub-item">
+                            <span class="pub-year">2018</span>
+                            <span class="pub-title">Calibration of categorical simulations by evolutionary gradual deformation method</span>
+                        </li>
+                        <li class="pub-item">
+                            <span class="pub-year">2017</span>
+                            <span class="pub-title">Integration of multiple soft data sets in MPS through multinomial logistic regression</span>
+                        </li>
+                        <li class="pub-item">
+                            <span class="pub-year">2015</span>
+                            <span class="pub-title">Feature-preserving interpolation and filtering of environmental time series</span>
+                        </li>
+                        <li class="pub-item">
+                            <span class="pub-year">2014</span>
+                            <span class="pub-title">Multiple-point geostatistical simulation using enriched pattern databases</span>
+                        </li>
+                        <li class="pub-item">
+                            <span class="pub-year">2014</span>
+                            <span class="pub-title">Multiple-point geostatistical simulation of dykes… Sungun porphyry copper system, Iran</span>
+                        </li>
+                        <li class="pub-item">
+                            <span class="pub-year">2013</span>
+                            <span class="pub-title">Multiple-Point Geostatistical Simulation Using the Bunch-Pasting Direct Sampling Method</span>
+                        </li>
+                        <li class="pub-item">
+                            <span class="pub-year">2012</span>
+                            <span class="pub-title">On the reduction of the ordinary kriging smoothing effect</span>
+                        </li>
+                        <li class="pub-item">
+                            <span class="pub-year">2011</span>
+                            <span class="pub-title">Accounting for Secondary Variable for the Classification of Mineral Resources using Cokriging…</span>
+                        </li>
+                        <li class="pub-item">
+                            <span class="pub-year">2011</span>
+                            <span class="pub-title">The Application of Multiple-Point Geostatistics in the Modeling of Dike…</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>© 2026 Hassan Rezaee</p>
+        <p class="footer__text">Montreal · English/French</p>
+        <div class="footer__links">
+            <a href="https://www.linkedin.com/in/hassan-rezaee" target="_blank" class="footer__link">LinkedIn</a>
+            <a href="mailto:hassan.rezaee65@gmail.com" class="footer__link">Email</a>
+        </div>
     </footer>
 
     <script>
         const toggle = document.getElementById('themeToggle');
         const html = document.documentElement;
-        
         const savedTheme = localStorage.getItem('theme') || 'light';
         html.setAttribute('data-theme', savedTheme);
         
         toggle.addEventListener('click', () => {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            const newTheme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
         });
 
-        // Fluid background animation
-        const canvas = document.getElementById('fluidBg');
-        const ctx = canvas.getContext('2d');
-        
-        let width, height;
-        let time = 0;
-        
-        function resize() {
-            width = canvas.width = window.innerWidth;
-            height = canvas.height = document.body.scrollHeight;
-        }
-        
-        window.addEventListener('resize', resize);
-        resize();
-        
-        function noise(x, y, t) {
-            return Math.sin(x * 0.01 + t) * Math.cos(y * 0.01 + t * 0.5) * 
-                   Math.sin((x + y) * 0.005 + t * 0.3) * 
-                   Math.cos(x * 0.008 - t * 0.2);
-        }
-        
-        function draw() {
-            const isDark = html.getAttribute('data-theme') === 'dark';
-            
-            ctx.fillStyle = isDark ? '#0a0a0b' : '#fafafa';
-            ctx.fillRect(0, 0, width, height);
-            
-            const baseColor = isDark ? [96, 165, 250] : [37, 99, 235];
-            const altColor = isDark ? [167, 139, 250] : [99, 102, 241];
-            
-            for (let i = 0; i < 5; i++) {
-                ctx.beginPath();
-                
-                const offsetX = noise(i * 100, 0, time * 0.3) * 200;
-                const offsetY = noise(0, i * 100, time * 0.3) * 200;
-                
-                const gradient = ctx.createRadialGradient(
-                    width * 0.3 + offsetX + i * 150, 
-                    height * 0.2 + offsetY + i * 200, 
-                    0,
-                    width * 0.3 + offsetX + i * 150, 
-                    height * 0.2 + offsetY + i * 200, 
-                    400 + Math.sin(time + i) * 100
-                );
-                
-                const color = i % 2 === 0 ? baseColor : altColor;
-                gradient.addColorStop(0, `rgba(${color[0]}, ${color[1]}, ${color[2]}, ${isDark ? 0.03 : 0.02})`);
-                gradient.addColorStop(1, 'transparent');
-                
-                ctx.fillStyle = gradient;
-                ctx.arc(
-                    width * 0.3 + offsetX + i * 150, 
-                    height * 0.2 + offsetY + i * 200, 
-                    400 + Math.sin(time + i) * 100, 
-                    0, 
-                    Math.PI * 2
-                );
-                ctx.fill();
-            }
-            
-            time += 0.008;
-            requestAnimationFrame(draw);
-        }
-        
-        draw();
-        
-        new ResizeObserver(() => {
-            canvas.height = document.body.scrollHeight;
-        }).observe(document.body);
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('nav__links--open');
+        });
     </script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f7086275d115490a9a436e477aad2848"}'></script><!-- End Cloudflare Web Analytics -->
 </body>

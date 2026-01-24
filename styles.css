@@ -68,37 +68,49 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.15;
+    opacity: 0.3;
     pointer-events: none;
     transition: opacity 0.3s;
 }
 
-/* Home page - natural watercolor */
+/* Home page */
 body[data-page="home"]::before {
-    background-image: url('images/bg-natural.png');
+    background-image: url('images/bg-home.png');
 }
 
-/* Work & AI pages - tech network */
-body[data-page="work"]::before,
+/* Work page */
+body[data-page="work"]::before {
+    background-image: url('images/bg-work.png');
+}
+
+/* AI page */
 body[data-page="ai"]::before {
-    background-image: url('images/bg-tech.png');
+    background-image: url('images/bg-ai.png');
 }
 
-/* Privacy & Research pages - watercolor */
-body[data-page="privacy"]::before,
+/* Privacy page */
+body[data-page="privacy"]::before {
+    background-image: url('images/bg-privacy.png');
+}
+
+/* Research page */
 body[data-page="research"]::before {
-    background-image: url('images/bg-watercolor.png');
+    background-image: url('images/bg-research.png');
 }
 
-/* Pricing & Contact pages - natural */
-body[data-page="pricing"]::before,
+/* Pricing page */
+body[data-page="pricing"]::before {
+    background-image: url('images/bg-pricing.png');
+}
+
+/* Contact page - reuse home image */
 body[data-page="contact"]::before {
-    background-image: url('images/bg-natural.png');
+    background-image: url('images/bg-home.png');
 }
 
-/* Dark mode - reduce opacity */
+/* Dark mode - slightly reduce opacity but still visible */
 [data-theme="dark"] body::before {
-    opacity: 0.08;
+    opacity: 0.2;
 }
 
 /* ========================================

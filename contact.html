@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — Hassan Rezaee</title>
+    <meta name="description" content="Contact Hassan Rezaee about AI engineering roles, technical collaborations, speaking, research, or selected projects.">
+    <link rel="canonical" href="https://hassanrezaee.com/contact.html">
+    <meta property="og:title" content="Contact — Hassan Rezaee">
+    <meta property="og:description" content="Reach Hassan Rezaee by email or LinkedIn.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hassanrezaee.com/contact.html">
+    <meta property="og:image" content="https://hassanrezaee.com/images/HassanRezaee_Logo.png">
     <link rel="icon" type="image/png" href="images/HassanRezaee_Logo.png">
     <link rel="apple-touch-icon" href="images/HassanRezaee_Logo.png">
     <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');</script>
 </head>
 <body data-page="contact">
+    <a href="#main" class="skip-link">Skip to content</a>
     <nav class="nav">
         <div class="nav__inner">
             <a href="./" class="nav__logo">
                 <img src="images/HassanRezaee_Logo.png" alt="Hassan Rezaee logo" class="nav__logo-mark">
                 <span>Hassan Rezaee</span>
             </a>
-            <button class="nav__menu-btn" id="menuBtn" aria-label="Menu">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <button class="nav__menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <line x1="3" y1="6" x2="21" y2="6"></line>
                     <line x1="3" y1="12" x2="21" y2="12"></line>
                     <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -25,16 +34,15 @@
             <div class="nav__links" id="navLinks">
                 <a href="./" class="nav__link">Home</a>
                 <a href="work.html" class="nav__link">Work</a>
-                <a href="ai.html" class="nav__link">AI / LLMs</a>
-                <a href="privacy.html" class="nav__link">Privacy-First</a>
+                <a href="ai.html" class="nav__link">AI Engineering</a>
+                <a href="oneclick.html" class="nav__link">OneClick</a>
                 <a href="research.html" class="nav__link">Research</a>
-                <a href="pricing.html" class="nav__link">Pricing</a>
                 <a href="contact.html" class="nav__link nav__link--active">Contact</a>
                 <button class="nav__toggle" id="themeToggle" aria-label="Toggle dark mode">
-                    <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                         <circle cx="12" cy="12" r="5"></circle>
                         <line x1="12" y1="1" x2="12" y2="3"></line>
                         <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -50,433 +58,52 @@
         </div>
     </nav>
 
-    <main>
+    <main id="main">
         <div class="container">
-            <p class="positioning">I ship privacy-first software and measurable AI systems.</p>
-
             <section class="hero">
-                <h1 class="hero__headline">Let's build something real.</h1>
-                <p class="page-intro">Tell me what you're trying to ship, the timeline you have in mind, and whether privacy constraints or AI are part of the requirements.</p>
+                <h1 class="hero__headline">Get in touch</h1>
+                <p class="page-intro">For AI engineering roles, technical collaborations, speaking, research, or selected projects, the easiest way to reach me is by email or LinkedIn.</p>
             </section>
 
             <section class="section">
-                <div class="contact-actions">
-                    <button class="btn btn--primary" id="bookBtn">Book a 15-minute call</button>
-                    <button class="btn btn--secondary" id="messageBtn">Send a message</button>
-                </div>
-                
-                <div class="card mt-4">
-                    <h3 class="card__title" style="margin-bottom: 1rem;">Help me understand your project</h3>
-                    <ul class="capabilities">
-                        <li>What are you building?</li>
-                        <li>Who are the users?</li>
-                        <li>Do you have data?</li>
-                        <li>Any privacy/regulatory constraints?</li>
-                        <li>Timeline/budget range?</li>
-                    </ul>
-                </div>
-                
-                <div class="contact-info mt-4">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-item__label">Email</span>
+                        <span class="contact-item__value"><a href="mailto:hassan.rezaee65@gmail.com">hassan.rezaee65@gmail.com</a></span>
+                    </div>
                     <div class="contact-item">
                         <span class="contact-item__label">LinkedIn</span>
-                        <span class="contact-item__value"><a href="https://www.linkedin.com/in/hassan-rezaee" target="_blank">linkedin.com/in/hassan-rezaee</a></span>
+                        <span class="contact-item__value"><a href="https://www.linkedin.com/in/hassan-rezaee" target="_blank" rel="noopener noreferrer">linkedin.com/in/hassan-rezaee</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-item__label">GitHub</span>
+                        <span class="contact-item__value"><a href="https://github.com/HassanRezaee" target="_blank" rel="noopener noreferrer">github.com/HassanRezaee</a></span>
                     </div>
                     <div class="contact-item">
                         <span class="contact-item__label">Location</span>
-                        <span class="contact-item__value">Montreal (EN/FR)</span>
+                        <span class="contact-item__value">Montreal, Canada</span>
                     </div>
                 </div>
+                <p class="note">For OneClick product inquiries, visit <a href="https://www.oneclickreceipts.com/?utm_source=hassanrezaee.com&amp;utm_medium=referral&amp;utm_campaign=founder_site" target="_blank" rel="noopener noreferrer" class="inline-link">OneClick</a>.</p>
             </section>
-        </div>
-    </main>
-
-    <!-- Booking Modal -->
-    <div class="modal" id="bookingModal">
-        <div class="modal__overlay"></div>
-        <div class="modal__content">
-            <button class="modal__close" id="closeBooking">&times;</button>
-            <h2 class="modal__title">Book a 15-minute call</h2>
-            <div id="calendarContainer"></div>
-            <div id="timeSlotsContainer" class="time-slots"></div>
-            <div id="bookingForm" class="booking-form" style="display: none;">
-                <h3>Confirm booking</h3>
-                <form id="bookingConfirmForm">
-                    <div class="form-group">
-                        <label>Selected time</label>
-                        <input type="text" id="selectedTime" readonly>
-                    </div>
-                    <div class="form-group">
-                        <label>Your name *</label>
-                        <input type="text" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Your email *</label>
-                        <input type="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label>What would you like to discuss?</label>
-                        <textarea name="message" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--primary">Confirm booking</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Form Modal -->
-    <div class="modal" id="contactModal">
-        <div class="modal__overlay"></div>
-        <div class="modal__content">
-            <button class="modal__close" id="closeContact">&times;</button>
-            <h2 class="modal__title">Send a message</h2>
-            <form id="contactForm" class="contact-form">
-                <div class="form-group">
-                    <label>Your name *</label>
-                    <input type="text" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label>Your email *</label>
-                    <input type="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label>Subject *</label>
-                    <input type="text" name="subject" required>
-                </div>
-                <div class="form-group">
-                    <label>Message *</label>
-                    <textarea name="message" rows="6" required></textarea>
-                </div>
-                <button type="submit" class="btn btn--primary">Send message</button>
-            </form>
-        </div>
-    </div>
         </div>
     </main>
 
     <footer>
-        <p class="footer__text">Montreal · English/French</p>
+        <div class="footer__identity">
+            <p class="footer__name">Hassan Rezaee</p>
+            <p class="footer__role">AI Engineer · Forward Deployed Engineer · Product Builder</p>
+            <p class="footer__text">Montreal, Canada</p>
+        </div>
         <div class="footer__links">
-            <a href="https://www.linkedin.com/in/hassan-rezaee" target="_blank" class="footer__link">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/hassan-rezaee" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+            <a href="https://github.com/HassanRezaee" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+            <a href="mailto:hassan.rezaee65@gmail.com" class="footer__link">Email</a>
+            <a href="https://www.oneclickreceipts.com/?utm_source=hassanrezaee.com&amp;utm_medium=referral&amp;utm_campaign=founder_site" target="_blank" rel="noopener noreferrer" class="footer__link">OneClick</a>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script>
-        // EmailJS configuration - replace these with your actual values from emailjs.com
-        // 1. Sign up at https://www.emailjs.com/
-        // 2. Create an email service (Gmail)
-        // 3. Create email templates
-        // 4. Get your Public Key, Service ID, and Template ID
-        const EMAILJS_CONFIG = {
-            publicKey: "YOUR_PUBLIC_KEY",
-            serviceId: "YOUR_SERVICE_ID",
-            bookingTemplateId: "YOUR_BOOKING_TEMPLATE_ID",
-            contactTemplateId: "YOUR_CONTACT_TEMPLATE_ID"
-        };
-
-        // Initialize EmailJS if configured
-        if (EMAILJS_CONFIG.publicKey !== "YOUR_PUBLIC_KEY") {
-            emailjs.init(EMAILJS_CONFIG.publicKey);
-        }
-
-        const toggle = document.getElementById('themeToggle');
-        const html = document.documentElement;
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        html.setAttribute('data-theme', savedTheme);
-        
-        toggle.addEventListener('click', () => {
-            const newTheme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-        });
-
-        const menuBtn = document.getElementById('menuBtn');
-        const navLinks = document.getElementById('navLinks');
-        menuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('nav__links--open');
-        });
-
-        // Modal functionality
-        const bookingModal = document.getElementById('bookingModal');
-        const contactModal = document.getElementById('contactModal');
-        const bookBtn = document.getElementById('bookBtn');
-        const messageBtn = document.getElementById('messageBtn');
-        const closeBooking = document.getElementById('closeBooking');
-        const closeContact = document.getElementById('closeContact');
-
-        bookBtn.addEventListener('click', () => {
-            bookingModal.classList.add('active');
-            initCalendar();
-        });
-
-        messageBtn.addEventListener('click', () => {
-            contactModal.classList.add('active');
-        });
-
-        closeBooking.addEventListener('click', () => {
-            bookingModal.classList.remove('active');
-        });
-
-        closeContact.addEventListener('click', () => {
-            contactModal.classList.remove('active');
-        });
-
-        bookingModal.querySelector('.modal__overlay').addEventListener('click', () => {
-            bookingModal.classList.remove('active');
-        });
-
-        contactModal.querySelector('.modal__overlay').addEventListener('click', () => {
-            contactModal.classList.remove('active');
-        });
-
-        // Calendar functionality
-        let selectedDate = null;
-        let selectedTime = null;
-        const bookedSlots = generateBookedSlots();
-
-        function generateBookedSlots() {
-            const booked = [];
-            const today = new Date();
-            for (let i = 0; i < 14; i++) {
-                const date = new Date(today);
-                date.setDate(today.getDate() + i);
-                const dayOfWeek = date.getDay();
-                if (dayOfWeek >= 1 && dayOfWeek <= 5) { // Monday to Friday
-                    const numBooked = Math.floor(Math.random() * 3) + 1; // 1-3 booked slots per day
-                    for (let j = 0; j < numBooked; j++) {
-                        const hour = 9 + Math.floor(Math.random() * 8); // 9 AM to 5 PM
-                        const minute = Math.random() > 0.5 ? 0 : 30;
-                        booked.push({
-                            date: date.toISOString().split('T')[0],
-                            time: `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`
-                        });
-                    }
-                }
-            }
-            return booked;
-        }
-
-        function initCalendar() {
-            const container = document.getElementById('calendarContainer');
-            const today = new Date();
-            let currentMonth = today.getMonth();
-            let currentYear = today.getFullYear();
-
-            function renderCalendar() {
-                const firstDay = new Date(currentYear, currentMonth, 1);
-                const lastDay = new Date(currentYear, currentMonth + 1, 0);
-                const daysInMonth = lastDay.getDate();
-                const startingDayOfWeek = firstDay.getDay();
-
-                const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
-                    'July', 'August', 'September', 'October', 'November', 'December'];
-                const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-
-                let html = `
-                    <div class="calendar">
-                        <div class="calendar__header">
-                            <button class="calendar__nav" onclick="prevMonth()">&larr;</button>
-                            <div class="calendar__month">${monthNames[currentMonth]} ${currentYear}</div>
-                            <button class="calendar__nav" onclick="nextMonth()">&rarr;</button>
-                        </div>
-                        <div class="calendar__grid">
-                `;
-
-                dayNames.forEach(day => {
-                    html += `<div class="calendar__day-header">${day}</div>`;
-                });
-
-                for (let i = 0; i < startingDayOfWeek; i++) {
-                    html += `<div class="calendar__day calendar__day--disabled"></div>`;
-                }
-
-                const todayStr = today.toISOString().split('T')[0];
-                for (let day = 1; day <= daysInMonth; day++) {
-                    const date = new Date(currentYear, currentMonth, day);
-                    const dateStr = date.toISOString().split('T')[0];
-                    const isPast = date < today && dateStr !== todayStr;
-                    const isToday = dateStr === todayStr;
-                    const isWeekend = date.getDay() === 0 || date.getDay() === 6;
-                    const hasBookedSlots = bookedSlots.some(slot => slot.date === dateStr);
-                    const isSelected = selectedDate === dateStr;
-
-                    let classes = 'calendar__day';
-                    if (isPast || isWeekend) classes += ' calendar__day--disabled';
-                    if (isToday) classes += ' calendar__day--today';
-                    if (isSelected) classes += ' calendar__day--selected';
-                    if (hasBookedSlots && !isPast && !isWeekend) {
-                        // Mark some days as having booked slots
-                    }
-
-                    html += `<div class="${classes}" data-date="${dateStr}" ${!isPast && !isWeekend ? 'onclick="selectDate(\'' + dateStr + '\')"' : ''}>${day}</div>`;
-                }
-
-                html += `</div></div>`;
-                container.innerHTML = html;
-                if (selectedDate) {
-                    showTimeSlots(selectedDate);
-                }
-            }
-
-            window.prevMonth = function() {
-                currentMonth--;
-                if (currentMonth < 0) {
-                    currentMonth = 11;
-                    currentYear--;
-                }
-                renderCalendar();
-            };
-
-            window.nextMonth = function() {
-                currentMonth++;
-                if (currentMonth > 11) {
-                    currentMonth = 0;
-                    currentYear++;
-                }
-                renderCalendar();
-            };
-
-            window.selectDate = function(dateStr) {
-                selectedDate = dateStr;
-                selectedTime = null;
-                renderCalendar();
-                showTimeSlots(dateStr);
-            };
-
-            renderCalendar();
-        }
-
-        function showTimeSlots(dateStr) {
-            const container = document.getElementById('timeSlotsContainer');
-            const slots = [];
-            for (let hour = 9; hour <= 17; hour++) {
-                for (let minute of [0, 30]) {
-                    if (hour === 17 && minute === 30) break;
-                    const timeStr = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
-                    const isBooked = bookedSlots.some(slot => slot.date === dateStr && slot.time === timeStr);
-                    slots.push({ time: timeStr, booked: isBooked });
-                }
-            }
-
-            let html = '<h3 style="margin-bottom: 1rem; font-size: 0.9375rem; font-weight: 600;">Select a time</h3><div class="time-slots">';
-            slots.forEach(slot => {
-                const isSelected = selectedTime === slot.time;
-                let classes = 'time-slot';
-                if (slot.booked) classes += ' time-slot--booked';
-                if (isSelected) classes += ' time-slot--selected';
-                html += `<div class="${classes}" ${!slot.booked ? `onclick="selectTime('${slot.time}')"` : ''}>${formatTime(slot.time)}</div>`;
-            });
-            html += '</div>';
-
-            container.innerHTML = html;
-        }
-
-        window.selectTime = function(time) {
-            selectedTime = time;
-            showTimeSlots(selectedDate);
-            const bookingForm = document.getElementById('bookingForm');
-            const selectedTimeInput = document.getElementById('selectedTime');
-            const date = new Date(selectedDate);
-            const dateStr = date.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-            selectedTimeInput.value = `${dateStr} at ${formatTime(time)}`;
-            bookingForm.style.display = 'block';
-            bookingForm.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        };
-
-        function formatTime(time) {
-            const [hour, minute] = time.split(':');
-            const h = parseInt(hour);
-            const ampm = h >= 12 ? 'PM' : 'AM';
-            const displayHour = h % 12 || 12;
-            return `${displayHour}:${minute} ${ampm}`;
-        }
-
-        // Booking form submission
-        document.getElementById('bookingConfirmForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const formData = new FormData(e.target);
-            const data = {
-                name: formData.get('name'),
-                email: formData.get('email'),
-                message: formData.get('message'),
-                date: selectedDate,
-                time: selectedTime,
-                formattedTime: document.getElementById('selectedTime').value
-            };
-
-            try {
-                if (EMAILJS_CONFIG.publicKey !== "YOUR_PUBLIC_KEY") {
-                    await emailjs.send(EMAILJS_CONFIG.serviceId, EMAILJS_CONFIG.bookingTemplateId, {
-                        to_email: 'hassan.rezaee65@gmail.com',
-                        from_name: data.name,
-                        from_email: data.email,
-                        subject: `New booking: ${data.formattedTime}`,
-                        message: `New booking request:\n\nDate & Time: ${data.formattedTime}\nName: ${data.name}\nEmail: ${data.email}\nMessage: ${data.message || 'No message'}`
-                    });
-                } else {
-                    // Fallback: open email client
-                    const subject = encodeURIComponent(`Booking Request: ${data.formattedTime}`);
-                    const body = encodeURIComponent(`Hi Hassan,\n\nI'd like to book a 15-minute call on ${data.formattedTime}.\n\nName: ${data.name}\nEmail: ${data.email}\n\n${data.message ? 'Message: ' + data.message : ''}`);
-                    window.location.href = `mailto:hassan.rezaee65@gmail.com?subject=${subject}&body=${body}`;
-                    return;
-                }
-
-                document.getElementById('bookingForm').innerHTML = `
-                    <div class="form-success">
-                        <strong>Booking request sent!</strong><br>
-                        I'll confirm your ${data.formattedTime} appointment via email.
-                    </div>
-                `;
-            } catch (error) {
-                // Fallback to mailto
-                const subject = encodeURIComponent(`Booking Request: ${data.formattedTime}`);
-                const body = encodeURIComponent(`Hi Hassan,\n\nI'd like to book a 15-minute call on ${data.formattedTime}.\n\nName: ${data.name}\nEmail: ${data.email}\n\n${data.message ? 'Message: ' + data.message : ''}`);
-                window.location.href = `mailto:hassan.rezaee65@gmail.com?subject=${subject}&body=${body}`;
-            }
-        });
-
-        // Contact form submission
-        document.getElementById('contactForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const formData = new FormData(e.target);
-            const data = {
-                name: formData.get('name'),
-                email: formData.get('email'),
-                subject: formData.get('subject'),
-                message: formData.get('message')
-            };
-
-            try {
-                if (EMAILJS_CONFIG.publicKey !== "YOUR_PUBLIC_KEY") {
-                    await emailjs.send(EMAILJS_CONFIG.serviceId, EMAILJS_CONFIG.contactTemplateId, {
-                        to_email: 'hassan.rezaee65@gmail.com',
-                        from_name: data.name,
-                        from_email: data.email,
-                        subject: data.subject,
-                        message: data.message
-                    });
-                } else {
-                    // Fallback: open email client
-                    const subject = encodeURIComponent(data.subject);
-                    const body = encodeURIComponent(`Hi Hassan,\n\n${data.message}\n\nBest regards,\n${data.name}\n${data.email}`);
-                    window.location.href = `mailto:hassan.rezaee65@gmail.com?subject=${subject}&body=${body}`;
-                    return;
-                }
-
-                document.getElementById('contactForm').innerHTML = `
-                    <div class="form-success">
-                        <strong>Message sent!</strong><br>
-                        I'll get back to you soon.
-                    </div>
-                `;
-            } catch (error) {
-                // Fallback to mailto
-                const subject = encodeURIComponent(data.subject);
-                const body = encodeURIComponent(`Hi Hassan,\n\n${data.message}\n\nBest regards,\n${data.name}\n${data.email}`);
-                window.location.href = `mailto:hassan.rezaee65@gmail.com?subject=${subject}&body=${body}`;
-            }
-        });
-    </script>
+    <script src="site.js"></script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f7086275d115490a9a436e477aad2848"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

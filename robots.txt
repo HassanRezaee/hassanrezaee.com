@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /deprecated/
+
+Sitemap: https://hassanrezaee.com/sitemap.xml

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Engineering — Hassan Rezaee</title>
-    <meta name="description" content="Hassan Rezaee on enterprise AI as a systems problem: workflow discovery, customized agents, evaluation, productionization, and keeping people in control.">
+    <meta name="description" content="Hassan Rezaee's AI engineering work: enterprise agentic systems, evaluation, and production machine learning.">
     <link rel="canonical" href="https://hassanrezaee.com/ai.html">
     <meta property="og:title" content="AI Engineering — Hassan Rezaee">
-    <meta property="og:description" content="Enterprise AI is a systems problem, not a model choice.">
+    <meta property="og:description" content="Enterprise agentic systems, evaluation, and production machine learning.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hassanrezaee.com/ai.html">
     <meta property="og:image" content="https://hassanrezaee.com/images/HassanRezaee_Logo.png">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles.css">
     <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');</script>
 </head>
-<body data-page="ai">
+<body>
     <a href="#main" class="skip-link">Skip to content</a>
     <nav class="nav">
         <div class="nav__inner">
@@ -34,7 +34,6 @@
             <div class="nav__links" id="navLinks">
                 <a href="./" class="nav__link">Home</a>
                 <a href="work.html" class="nav__link">Work</a>
-                <a href="ai.html" class="nav__link nav__link--active">AI Engineering</a>
                 <a href="oneclick.html" class="nav__link">OneClick</a>
                 <a href="research.html" class="nav__link">Research</a>
                 <a href="contact.html" class="nav__link">Contact</a>
@@ -60,105 +59,45 @@
 
     <main id="main">
         <div class="container">
-            <p class="positioning">AI Engineering</p>
-
             <section class="hero">
-                <h1 class="hero__headline">Enterprise AI is a systems problem, not a model choice.</h1>
-                <p class="page-intro">The difficult part is usually not calling a model. It is understanding the workflow, grounding the system in proprietary knowledge, connecting it to tools and existing software, evaluating behavior, defining human control, and operating it reliably in production.</p>
+                <h1 class="page-title">AI Engineering</h1>
+                <p class="page-intro">My recent work has focused on enterprise AI systems that operate over proprietary data and domain knowledge and interact with existing workflows and software.</p>
+                <p class="page-intro">The engineering around these systems includes retrieval and grounding, tool use, structured workflows, evaluation, human review, deployment, observability, and integration with enterprise systems.</p>
+                <p class="page-intro">My broader background includes production machine learning, forecasting, predictive modeling, deep learning, statistical modeling, and large-scale data pipelines.</p>
             </section>
 
             <section class="section">
-                <div class="section__header">
-                    <p class="section__title">Problem discovery</p>
-                    <h2 class="section__heading">Start with the customer and the workflow</h2>
-                </div>
-                <p>Before choosing an architecture, understand who is doing the work today, what information they use, where decisions are made, which failures matter, and how success will be measured.</p>
+                <h2 class="entry__title">Enterprise agentic systems</h2>
+                <p class="entry__body">In enterprise settings, useful AI systems often need access to information and capabilities outside the model itself. My work includes systems that retrieve proprietary knowledge, use structured data, call deterministic tools, maintain workflow state, and return outputs for user review or downstream systems.</p>
+                <p class="entry__body">The implementation work spans model behavior, application logic, enterprise integrations, data access, cloud infrastructure, and the user workflow around the system.</p>
             </section>
 
             <section class="section">
-                <div class="section__header">
-                    <p class="section__title">Enterprise agents</p>
-                    <h2 class="section__heading">Build around enterprise context</h2>
-                </div>
-                <p class="mb-3">Useful enterprise agents need more than a model. They need access to the right proprietary knowledge, structured data, tools, workflow state, business rules, and human expertise.</p>
-                <ul class="capabilities">
-                    <li>Proprietary data and knowledge grounding</li>
-                    <li>Retrieval when knowledge needs to be dynamically accessed</li>
-                    <li>Tool orchestration for deterministic actions and external systems</li>
-                    <li>Structured outputs and workflow state</li>
-                    <li>Human review where judgment or consequence requires it</li>
-                </ul>
+                <h2 class="entry__title">Evaluation and reliability</h2>
+                <p class="entry__body">My work includes task-level evaluation, failure analysis, regression checks, and feedback loops with domain experts and users.</p>
+                <p class="entry__body">For agentic systems, evaluation also includes whether the system retrieves the right information, uses tools correctly, follows workflow constraints, and produces outputs that are useful in the actual task.</p>
             </section>
 
             <section class="section">
-                <div class="section__header">
-                    <p class="section__title">Evaluation</p>
-                    <h2 class="section__heading">Evaluate the system, not just the model</h2>
-                </div>
-                <p class="mb-3">Measure whether the system completes the real task correctly, uses tools appropriately, remains grounded, respects constraints, and improves the user's workflow.</p>
-                <ul class="capabilities">
-                    <li>Task completion</li>
-                    <li>Groundedness and relevance</li>
-                    <li>Tool-call correctness</li>
-                    <li>Failure-mode analysis</li>
-                    <li>Regression testing</li>
-                    <li>Latency and cost</li>
-                    <li>Expert and user feedback</li>
-                </ul>
-            </section>
-
-            <section class="section">
-                <div class="section__header">
-                    <p class="section__title">Production</p>
-                    <h2 class="section__heading">Make it survive the real environment</h2>
-                </div>
-                <p>Production AI needs reliable software architecture, deployment, observability, access controls, versioning, failure handling, enterprise integration, and a path for learning from real users.</p>
+                <h2 class="entry__title">Production machine learning</h2>
+                <p class="entry__body">Before the current generation of agentic systems, much of my work centered on production machine learning: forecasting, predictive modeling, deep learning, large-scale data processing, validation, scheduled inference, monitoring, and integration with operational workflows.</p>
             </section>
 
             <section class="section" id="responsible-systems">
-                <div class="section__header">
-                    <p class="section__title">Responsible systems</p>
-                    <h2 class="section__heading">Keep people in control where it matters</h2>
-                </div>
-                <p>AI should reduce repetitive work and improve access to information without pretending every task should be autonomous. In sensitive or consequential workflows, design explicit review, approval, traceability, and fallback paths.</p>
+                <h2 class="entry__title">Human review</h2>
+                <p class="entry__body">In sensitive or consequential workflows, I design systems with explicit review, approval, and fallback paths rather than treating every task as autonomous.</p>
             </section>
 
             <section class="section">
-                <div class="section__header">
-                    <p class="section__title">When not to use AI</p>
-                    <h2 class="section__heading">Choose the system that actually fits</h2>
-                </div>
-                <p>Use deterministic software, rules, search, or classical ML when they provide better reliability, cost, latency, interpretability, or maintainability.</p>
-            </section>
-
-            <section class="section">
-                <div class="section__header">
-                    <p class="section__title">Selected technologies</p>
-                </div>
-                <ul class="tech-list">
-                    <li>Python</li>
-                    <li>PyTorch</li>
-                    <li>Microsoft Azure</li>
-                    <li>Azure AI services</li>
-                    <li>Azure Machine Learning</li>
-                    <li>Databricks</li>
-                    <li>PySpark</li>
-                    <li>FastAPI</li>
-                    <li>Docker</li>
-                    <li>SQL</li>
-                    <li>Distributed data processing</li>
-                    <li>Model and AI evaluation tooling</li>
-                </ul>
+                <h2 class="entry__title">Selected technologies</h2>
+                <p class="tech-list">Python, PyTorch, Azure, Azure AI services, Azure Machine Learning, Databricks, PySpark, FastAPI, Docker, SQL</p>
             </section>
         </div>
     </main>
 
     <footer>
-        <div class="footer__identity">
-            <p class="footer__name">Hassan Rezaee</p>
-            <p class="footer__role">AI Engineer · Forward Deployed Engineer · Product Builder</p>
-            <p class="footer__text">Montreal, Canada</p>
-        </div>
+        <p class="footer__name">Hassan Rezaee</p>
+        <p class="footer__text">Montreal, Canada</p>
         <div class="footer__links">
             <a href="https://www.linkedin.com/in/hassan-rezaee" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
             <a href="https://github.com/HassanRezaee" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>

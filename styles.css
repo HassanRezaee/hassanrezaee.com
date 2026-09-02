@@ -566,6 +566,68 @@ h2.module-title {
 .background-block .section-kicker { margin-bottom: 0; }
 .background-block .section-kicker::after { display: none; }
 
+.outside-note { margin-bottom: 2rem; }
+
+.outside-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 0.9rem 1rem;
+    align-items: start;
+}
+
+.outside-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+}
+
+.outside-card {
+    margin: 0;
+    min-width: 0;
+}
+
+.outside-card__frame {
+    overflow: hidden;
+    border-radius: 14px;
+    background: var(--line);
+}
+.outside-card__frame picture { display: block; }
+
+.outside-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.55s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .outside-card:hover img { transform: scale(1.015); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .outside-card img { transition: none; }
+    .outside-card:hover img { transform: none; }
+}
+
+.outside-card figcaption {
+    padding: 0.7rem 0.1rem 0.15rem;
+}
+.outside-card figcaption strong {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+.outside-card figcaption span {
+    display: block;
+    font-size: 0.84rem;
+    color: var(--muted);
+    margin-top: 0.12rem;
+    line-height: 1.45;
+}
+.outside-card--landscape figcaption span {
+    font-size: 0.82rem;
+}
+
 /* Pages */
 .page-hero { padding: 3.5rem 0 2rem; }
 .page-title {
@@ -787,6 +849,15 @@ footer {
     .timeline__item {
         grid-template-columns: 1fr;
     }
+    .outside-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+    .outside-col { display: contents; }
+    .outside-card--mountains { order: 1; }
+    .outside-card--cycling { order: 2; }
+    .outside-card--hiking { order: 3; }
+    .outside-card--landscape { order: 4; }
     .feature-cae__index, .feature-cae__body { grid-column: 1; }
     .side-index { position: static; flex-direction: row; flex-wrap: wrap; gap: 0.85rem; margin-bottom: 1.5rem; }
     .band { padding: 3.4rem 0; }

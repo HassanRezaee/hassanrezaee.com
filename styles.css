@@ -246,15 +246,57 @@ strong { font-weight: 600; }
     display: block;
     width: 100%;
     height: auto;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 5;
     object-fit: cover;
-    object-position: 50% 12%;
+    object-position: 50% 42%;
     border-radius: 18px;
     border: 1px solid var(--line);
     box-shadow: var(--shadow);
 }
 
-/* Proof strip */
+.hero-scenic {
+    padding: 0;
+}
+.scenic-frame {
+    position: relative;
+}
+.scenic-frame img {
+    display: block;
+    width: 100%;
+    height: min(86vh, 780px);
+    object-fit: cover;
+    object-position: 78% 42%;
+}
+.scenic-copy {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, color-mix(in srgb, var(--paper) 88%, transparent) 0%, color-mix(in srgb, var(--paper) 62%, transparent) 36%, transparent 62%);
+}
+.scenic-ident {
+    max-width: 34rem;
+    padding: 2.5rem 0;
+}
+.scenic-ident .hero-name,
+.scenic-ident .hero-secondary,
+.scenic-ident .hero-intro {
+    color: var(--ink);
+}
+
+@media (max-width: 980px) {
+    .scenic-copy {
+        position: static;
+        background: var(--paper);
+        display: block;
+        padding: 1.6rem 0 2.4rem;
+    }
+    .scenic-ident { padding: 0; max-width: 40rem; }
+    .scenic-frame img {
+        height: min(56vh, 420px);
+        object-position: 82% 40%;
+    }
+}
 .proof {
     background: var(--surface);
     border-top: 1px solid var(--line);

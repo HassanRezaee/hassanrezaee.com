@@ -24,85 +24,85 @@
                 <img src="images/HassanRezaee_Logo.png" alt="Hassan Rezaee logo" class="nav__logo-mark">
                 <span>Hassan Rezaee</span>
             </a>
-            <button class="nav__menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-            </button>
             <div class="nav__links" id="navLinks">
                 <a href="./" class="nav__link">Home</a>
                 <a href="work.html" class="nav__link">Work</a>
                 <a href="oneclick.html" class="nav__link">OneClick</a>
                 <a href="research.html" class="nav__link">Research</a>
                 <a href="contact.html" class="nav__link">Contact</a>
+            </div>
+            <div class="nav__tools">
                 <button class="nav__toggle" id="themeToggle" aria-label="Toggle dark mode">
-                    <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
+                    <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </button>
+                <button class="nav__menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                 </button>
             </div>
         </div>
     </nav>
 
     <main id="main">
-        <div class="container">
-            <section class="hero">
+        <section class="page-hero">
+            <div class="site-shell">
+                <p class="eyebrow">Technical notes</p>
                 <h1 class="page-title">AI Engineering</h1>
                 <p class="page-intro">My recent work has focused on enterprise AI systems that operate over proprietary data and domain knowledge and interact with existing workflows and software.</p>
                 <p class="page-intro">The engineering around these systems includes retrieval and grounding, tool use, structured workflows, evaluation, human review, deployment, observability, and integration with enterprise systems.</p>
                 <p class="page-intro">My broader background includes production machine learning, forecasting, predictive modeling, deep learning, statistical modeling, and large-scale data pipelines.</p>
-            </section>
+            </div>
+        </section>
 
-            <section class="section">
-                <h2 class="entry__title">Enterprise agentic systems</h2>
-                <p class="entry__body">In enterprise settings, useful AI systems often need access to information and capabilities outside the model itself. My work includes systems that retrieve proprietary knowledge, use structured data, call deterministic tools, maintain workflow state, and return outputs for user review or downstream systems.</p>
-                <p class="entry__body">The implementation work spans model behavior, application logic, enterprise integrations, data access, cloud infrastructure, and the user workflow around the system.</p>
-            </section>
-
-            <section class="section">
-                <h2 class="entry__title">Evaluation and reliability</h2>
-                <p class="entry__body">My work includes task-level evaluation, failure analysis, regression checks, and feedback loops with domain experts and users.</p>
-                <p class="entry__body">For agentic systems, evaluation also includes whether the system retrieves the right information, uses tools correctly, follows workflow constraints, and produces outputs that are useful in the actual task.</p>
-            </section>
-
-            <section class="section">
-                <h2 class="entry__title">Production machine learning</h2>
-                <p class="entry__body">Before the current generation of agentic systems, much of my work centered on production machine learning: forecasting, predictive modeling, deep learning, large-scale data processing, validation, scheduled inference, monitoring, and integration with operational workflows.</p>
-            </section>
-
-            <section class="section" id="responsible-systems">
-                <h2 class="entry__title">Human review</h2>
-                <p class="entry__body">In sensitive or consequential workflows, I design systems with explicit review, approval, and fallback paths rather than treating every task as autonomous.</p>
-            </section>
-
-            <section class="section">
-                <h2 class="entry__title">Selected technologies</h2>
-                <p class="tech-list">Python, PyTorch, Azure, Microsoft Foundry, Azure Machine Learning, Databricks, PySpark, FastAPI, Docker, SQL</p>
-            </section>
-        </div>
+        <section class="band band--paper band--flush">
+            <div class="site-shell page-grid">
+                <nav class="side-index" aria-label="On this page">
+                    <a href="#agentic">Agentic systems</a>
+                    <a href="#evaluation">Evaluation</a>
+                    <a href="#production-ml">Production ML</a>
+                    <a href="#responsible-systems">Human review</a>
+                    <a href="#technologies">Technologies</a>
+                </nav>
+                <div>
+                    <section class="module" id="agentic">
+                        <h2>Enterprise agentic systems</h2>
+                        <p class="prose">In enterprise settings, useful AI systems often need access to information and capabilities outside the model itself. My work includes systems that retrieve proprietary knowledge, use structured data, call deterministic tools, maintain workflow state, and return outputs for user review or downstream systems.</p>
+                        <p class="prose">The implementation work spans model behavior, application logic, enterprise integrations, data access, cloud infrastructure, and the user workflow around the system.</p>
+                    </section>
+                    <section class="module" id="evaluation">
+                        <h2>Evaluation and reliability</h2>
+                        <p class="prose">My work includes task-level evaluation, failure analysis, regression checks, and feedback loops with domain experts and users.</p>
+                        <p class="prose">For agentic systems, evaluation also includes whether the system retrieves the right information, uses tools correctly, follows workflow constraints, and produces outputs that are useful in the actual task.</p>
+                    </section>
+                    <section class="module" id="production-ml">
+                        <h2>Production machine learning</h2>
+                        <p class="prose">Before the current generation of agentic systems, much of my work centered on production machine learning: forecasting, predictive modeling, deep learning, large-scale data processing, validation, scheduled inference, monitoring, and integration with operational workflows.</p>
+                    </section>
+                    <section class="module" id="responsible-systems">
+                        <h2>Human review</h2>
+                        <p class="prose">In sensitive or consequential workflows, I design systems with explicit review, approval, and fallback paths rather than treating every task as autonomous.</p>
+                    </section>
+                    <section class="module" id="technologies">
+                        <h2>Selected technologies</h2>
+                        <p class="prose">Python, PyTorch, Azure, Microsoft Foundry, Azure Machine Learning, Databricks, PySpark, FastAPI, Docker, SQL</p>
+                    </section>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p class="footer__name">Hassan Rezaee</p>
-        <p class="footer__text">Montreal, Canada</p>
-        <div class="footer__links">
-            <a href="https://www.linkedin.com/in/hassan-rezaee" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
-            <a href="https://github.com/HassanRezaee" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
-            <a href="mailto:hassan.rezaee65@gmail.com" class="footer__link">Email</a>
-            <a href="https://www.oneclickreceipts.com/?utm_source=hassanrezaee.com&amp;utm_medium=referral&amp;utm_campaign=founder_site" target="_blank" rel="noopener noreferrer" class="footer__link">OneClick</a>
+        <div class="site-shell footer-grid">
+            <div>
+                <p class="footer__name">Hassan Rezaee</p>
+                <p class="footer__text">Montreal, Canada</p>
+            </div>
+            <div class="footer__links">
+                <a href="https://www.linkedin.com/in/hassan-rezaee" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+                <a href="https://github.com/HassanRezaee" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+                <a href="mailto:hassan.rezaee65@gmail.com" class="footer__link">Email</a>
+                <a href="https://www.oneclickreceipts.com/?utm_source=hassanrezaee.com&amp;utm_medium=referral&amp;utm_campaign=founder_site" target="_blank" rel="noopener noreferrer" class="footer__link">OneClick</a>
+            </div>
         </div>
     </footer>
 

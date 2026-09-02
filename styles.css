@@ -280,7 +280,7 @@ strong { font-weight: 600; }
     width: 100%;
     height: min(62vh, 540px);
     object-fit: cover;
-    object-position: 78% 42%;
+    object-position: 78% 18%;
 }
 .scenic-copy {
     position: absolute;
@@ -310,7 +310,7 @@ strong { font-weight: 600; }
     .scenic-ident { padding: 0; max-width: 40rem; }
     .scenic-frame img {
         height: min(40vh, 300px);
-        object-position: 82% 40%;
+        object-position: 82% 16%;
     }
 }
 .proof {
@@ -567,6 +567,19 @@ h2.module-title {
 .background-block .section-kicker::after { display: none; }
 
 .outside-note { margin-bottom: 2rem; }
+
+.hobbies-gallery {
+    padding-bottom: 1.5rem;
+}
+
+.hobbies-gallery .outside-grid {
+    grid-template-columns: 1.45fr 1fr;
+    gap: 1.2rem 1.25rem;
+}
+
+.hobbies-gallery .outside-col {
+    gap: 1.45rem;
+}
 
 .outside-grid {
     display: grid;
@@ -852,6 +865,10 @@ footer {
     .outside-grid {
         grid-template-columns: 1fr;
         gap: 1.25rem;
+    }
+    .hobbies-gallery .outside-grid {
+        grid-template-columns: 1fr;
+        gap: 1.4rem;
     }
     .outside-col { display: contents; }
     .outside-card--mountains { order: 1; }

@@ -6,6 +6,9 @@
     <title>Work — Hassan Rezaee</title>
     <meta name="description" content="Work by Hassan Rezaee: AI and machine-learning systems at CAE, OneClick, and earlier applied research.">
     <link rel="canonical" href="https://hassanrezaee.com/work.html">
+    <link rel="alternate" hreflang="en" href="https://hassanrezaee.com/work.html">
+    <link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/work.html">
+    <link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/work.html">
     <meta property="og:title" content="Work — Hassan Rezaee">
     <meta property="og:description" content="AI and machine-learning systems at CAE, OneClick, and earlier applied research.">
     <meta property="og:type" content="website">
@@ -36,6 +39,11 @@
                 <a href="contact.html" class="nav__link">Contact</a>
             </div>
             <div class="nav__tools">
+                <p class="lang-switch" aria-label="Language">
+                    <a href="work.html" hreflang="en" lang="en" aria-current="page">EN</a>
+                    <span aria-hidden="true">|</span>
+                    <a href="fr/work.html" hreflang="fr" lang="fr">FR</a>
+                </p>
                 <button class="nav__toggle" id="themeToggle" aria-label="Toggle dark mode">
                     <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
                     <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
@@ -52,44 +60,94 @@
             <div class="site-shell">
                 <p class="eyebrow">Experience</p>
                 <h1 class="page-title">Work</h1>
-                <p class="page-intro">A selection of the systems, products, and research I have worked on. Some enterprise work is described at a high level because it involves proprietary internal systems and processes.</p>
+                <p class="page-intro">A selection of the systems, products, and research I have worked on. My recent work spans two different environments: enterprise AI systems at CAE and building OneClick as a technical co-founder. Some enterprise work is described at a high level because it involves proprietary internal systems and processes.</p>
             </div>
         </section>
 
         <section class="band band--paper band--flush">
             <div class="site-shell">
-                <article class="exp">
-                    <h2 class="brand-lockup" aria-label="CAE"><img src="images/organizations/cae.svg" alt="" class="brand-logo brand-logo--wordmark" width="110" height="41"></h2>
-                    <p class="meta">Data Scientist · 2022–present · Montreal</p>
-                    <p class="prose">I work on applied AI and machine-learning systems at CAE, collaborating with internal customers, domain experts, architects, data scientists, data engineers, and software engineers.</p>
-                    <p class="prose">My recent work has focused on enterprise agentic systems that use proprietary data and domain knowledge and interact with existing business workflows and software. The engineering around these systems includes retrieval, tool use, structured workflows, evaluation, human review, cloud deployment, and enterprise integration.</p>
-                    <p class="prose">Earlier projects have included production forecasting and predictive systems, language-model adaptation and evaluation, document AI, and large-scale machine-learning pipelines.</p>
-                    <p class="mt-3"><a href="ai.html" class="text-link">More on AI engineering →</a></p>
-                </article>
-
-                <article class="exp">
-                    <h2 class="brand-lockup"><img src="images/organizations/oneclick.png" alt="" class="brand-logo brand-logo--mark" width="32" height="32">OneClick</h2>
-                    <p class="meta">Co-founder &amp; Technical Lead · 2024–present · Pre-launch</p>
-                    <p class="prose">I co-founded OneClick, a practice-management software company for mental-health professionals. Over the past two years I have worked across customer discovery, product decisions, software architecture, full-stack engineering, cloud infrastructure, security and privacy, integrations, deployment, and production operations.</p>
-                    <p class="prose">The product has been developed through repeated conversations, testing, and co-design with clinicians. That feedback influences both the workflows we build and the technical decisions behind them.</p>
-                    <p class="mt-3"><a href="oneclick.html" class="text-link">More about OneClick →</a></p>
-                </article>
-
-                <article class="exp">
-                    <h2>Postdoctoral Fellow</h2>
-                    <p class="meta">HEC Montréal × McGill University × Intact Financial Corporation · 2019–2022 · Mitacs Elevate</p>
-                    <p class="prose">Joint industry-academic postdoctoral research focused on statistical and machine-learning methods for road safety and driver behaviour, including spatial and Bayesian modeling.</p>
-                    <div class="org-logos org-logos--joint">
-                        <img src="images/organizations/hec-montreal.svg" alt="HEC Montréal" class="org-logo">
-                        <img src="images/organizations/mcgill.png" alt="McGill University" class="org-logo">
-                        <img src="images/organizations/intact.svg" alt="Intact Financial Corporation" class="org-logo">
+                <article class="exp exp--split">
+                    <div class="exp__main">
+                        <h2 class="brand-lockup" aria-label="CAE"><img src="images/organizations/cae.svg" alt="" class="brand-logo brand-logo--wordmark" width="110" height="41"></h2>
+                        <p class="meta">Data Scientist · 2022–present · Montreal</p>
+                        <p class="prose">I work on applied AI and machine-learning systems at CAE, collaborating with internal customers, domain experts, architects, data scientists, data engineers, and software engineers.</p>
+                        <p class="prose">The work spans understanding the operational problem, system design, implementation, evaluation, deployment, enterprise integration, and iteration with users. Recent work has focused on enterprise agentic systems that use proprietary data and domain knowledge and interact with existing business workflows and software.</p>
+                        <p class="prose">Earlier projects have included production forecasting and predictive systems, language-model adaptation and evaluation, document AI, and large-scale machine-learning pipelines.</p>
+                        <p class="mt-3"><a href="ai.html" class="text-link">More on AI engineering →</a></p>
                     </div>
+                    <aside class="exp__rail">
+                        <h2>CAE</h2>
+                        <p class="rail-meta">Data Scientist · 2022–present</p>
+                        <ul class="rail-tags">
+                            <li>Enterprise AI</li>
+                            <li>Agentic systems</li>
+                            <li>Evaluation</li>
+                            <li>Integration</li>
+                        </ul>
+                        <p class="mt-3"><a href="ai.html" class="text-link">AI engineering →</a></p>
+                    </aside>
                 </article>
 
-                <article class="exp">
-                    <h2 aria-label="IAMGOLD"><img src="images/organizations/iamgold.svg" alt="" class="org-logo org-logo--heading"></h2>
-                    <p class="meta">Postdoctoral Researcher · 2017–2019</p>
-                    <p class="prose">Applied machine-learning and statistical methods to geological and mining problems, including ore/waste classification and modeling under complex spatial uncertainty.</p>
+                <article class="exp exp--split">
+                    <div class="exp__main">
+                        <h2 class="brand-lockup"><img src="images/organizations/oneclick.png" alt="" class="brand-logo brand-logo--mark" width="32" height="32">OneClick</h2>
+                        <p class="meta">Co-founder &amp; Technical Lead · 2024–present · Pre-launch</p>
+                        <p class="prose">I co-founded OneClick, a practice-management software company for mental-health professionals. Over the past two years I have worked across customer discovery, clinician co-design, product decisions, architecture, full-stack engineering, infrastructure, security, integrations, deployment, and iteration.</p>
+                        <p class="prose">The product has been developed through repeated conversations, testing, and co-design with clinicians. That feedback influences both the workflows we build and the technical decisions behind them.</p>
+                        <p class="mt-3"><a href="oneclick.html" class="text-link">More about OneClick →</a></p>
+                    </div>
+                    <aside class="exp__rail">
+                        <h2>OneClick</h2>
+                        <p class="rail-meta">Co-founder &amp; Technical Lead · 2024–present</p>
+                        <ul class="rail-tags">
+                            <li>Product</li>
+                            <li>Architecture</li>
+                            <li>Infrastructure</li>
+                            <li>Security</li>
+                            <li>AI</li>
+                        </ul>
+                        <p class="mt-3"><a href="oneclick.html" class="text-link">About OneClick →</a></p>
+                    </aside>
+                </article>
+
+                <article class="exp exp--split">
+                    <div class="exp__main">
+                        <h2 aria-label="Intact Financial Corporation"><img src="images/organizations/intact.svg" alt="" class="org-logo org-logo--heading"></h2>
+                        <p class="meta">Postdoctoral Scientist · 2019–2022 · Mitacs Elevate</p>
+                        <p class="prose">Worked on applied statistical and machine-learning problems in road safety and driver behaviour, including spatial and Bayesian modeling, as part of a joint industry-academic research program.</p>
+                        <p class="collab-note">In collaboration with HEC Montréal and McGill University.</p>
+                        <div class="org-logos org-logos--secondary">
+                            <img src="images/organizations/hec-montreal.svg" alt="HEC Montréal" class="org-logo">
+                            <img src="images/organizations/mcgill.png" alt="McGill University" class="org-logo">
+                        </div>
+                    </div>
+                    <aside class="exp__rail">
+                        <h2>Intact</h2>
+                        <p class="rail-meta">Postdoctoral Scientist · 2019–2022</p>
+                        <ul class="rail-tags">
+                            <li>Applied ML</li>
+                            <li>Spatial modeling</li>
+                            <li>Bayesian modeling</li>
+                            <li>Road safety</li>
+                        </ul>
+                    </aside>
+                </article>
+
+                <article class="exp exp--split">
+                    <div class="exp__main">
+                        <h2 aria-label="IAMGOLD"><img src="images/organizations/iamgold.svg" alt="" class="org-logo org-logo--heading"></h2>
+                        <p class="meta">Postdoctoral Researcher · 2017–2019</p>
+                        <p class="prose">Applied machine-learning and statistical methods to geological and mining problems, including ore/waste classification and modeling under complex spatial uncertainty.</p>
+                    </div>
+                    <aside class="exp__rail">
+                        <h2>IAMGOLD</h2>
+                        <p class="rail-meta">Postdoctoral Researcher · 2017–2019</p>
+                        <ul class="rail-tags">
+                            <li>Machine learning</li>
+                            <li>Spatial uncertainty</li>
+                            <li>Mining</li>
+                        </ul>
+                    </aside>
                 </article>
 
                 <div class="earlier">

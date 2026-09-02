@@ -1,24 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://hassanrezaee.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hassanrezaee.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/"/>
+  </url>
+  <url>
+    <loc>https://hassanrezaee.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hassanrezaee.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/"/>
   </url>
   <url>
     <loc>https://hassanrezaee.com/work.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hassanrezaee.com/work.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/work.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/work.html"/>
+  </url>
+  <url>
+    <loc>https://hassanrezaee.com/fr/work.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hassanrezaee.com/work.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/work.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/work.html"/>
   </url>
   <url>
     <loc>https://hassanrezaee.com/ai.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hassanrezaee.com/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/ai.html"/>
+  </url>
+  <url>
+    <loc>https://hassanrezaee.com/fr/ai.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hassanrezaee.com/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/ai.html"/>
   </url>
   <url>
     <loc>https://hassanrezaee.com/oneclick.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hassanrezaee.com/oneclick.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/oneclick.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/oneclick.html"/>
+  </url>
+  <url>
+    <loc>https://hassanrezaee.com/fr/oneclick.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hassanrezaee.com/oneclick.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/oneclick.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/oneclick.html"/>
   </url>
   <url>
     <loc>https://hassanrezaee.com/research.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hassanrezaee.com/research.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/research.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/research.html"/>
+  </url>
+  <url>
+    <loc>https://hassanrezaee.com/fr/research.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hassanrezaee.com/research.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/research.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/research.html"/>
   </url>
   <url>
     <loc>https://hassanrezaee.com/hobbies.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hassanrezaee.com/hobbies.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/hobbies.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/hobbies.html"/>
+  </url>
+  <url>
+    <loc>https://hassanrezaee.com/fr/hobbies.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hassanrezaee.com/hobbies.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/hobbies.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/hobbies.html"/>
   </url>
   <url>
     <loc>https://hassanrezaee.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hassanrezaee.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/contact.html"/>
+  </url>
+  <url>
+    <loc>https://hassanrezaee.com/fr/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hassanrezaee.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/contact.html"/>
   </url>
 </urlset>

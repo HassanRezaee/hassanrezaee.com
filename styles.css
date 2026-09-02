@@ -98,6 +98,12 @@ strong { font-weight: 600; }
 
 .nav__links { display: flex; align-items: center; gap: 1.6rem; }
 
+.nav__tools {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
 .nav__link {
     font-size: 0.9rem;
     font-weight: 500;
@@ -239,6 +245,7 @@ strong { font-weight: 600; }
 .portrait img {
     display: block;
     width: 100%;
+    height: auto;
     aspect-ratio: 3 / 4;
     object-fit: cover;
     object-position: 50% 12%;

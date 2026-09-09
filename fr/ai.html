@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingénierie en IA — Hassan Rezaee</title>
-    <meta name="description" content="Travail d’ingénierie en IA de Hassan Rezaee: systèmes agentiques d’entreprise, évaluation et apprentissage automatique en production.">
+    <meta name="description" content="Notes techniques sur l’ancrage, les outils déterministes, l’évaluation et le déploiement de systèmes d’IA d’entreprise.">
     <link rel="canonical" href="https://hassanrezaee.com/fr/ai.html">
     <link rel="alternate" hreflang="en" href="https://hassanrezaee.com/ai.html">
     <link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/ai.html">
     <link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/ai.html">
     <meta property="og:title" content="Ingénierie en IA — Hassan Rezaee">
-    <meta property="og:description" content="Travail d’ingénierie en IA de Hassan Rezaee: systèmes agentiques d’entreprise, évaluation et apprentissage automatique en production.">
+    <meta property="og:description" content="Ancrage, outils, évaluation et intégration pour des systèmes d’IA d’entreprise.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hassanrezaee.com/fr/ai.html">
-    <meta property="og:image" content="https://hassanrezaee.com/images/hassan-rezaee-mark.png">
+    <meta property="og:image" content="https://hassanrezaee.com/images/og/work.jpg">
     <link rel="icon" href="../images/hassan-rezaee-mark.svg" type="image/svg+xml">
     <link rel="icon" type="image/png" sizes="32x32" href="../images/hassan-rezaee-mark-32.png">
     <link rel="icon" type="image/png" sizes="48x48" href="../images/hassan-rezaee-mark-48.png">
@@ -23,7 +23,7 @@
 </head>
 <body>
     <a href="#main" class="skip-link">Aller au contenu</a>
-<nav class="nav">
+    <nav class="nav">
         <div class="nav__inner">
             <a href="./" class="nav__logo">
                 <img src="../images/hassan-rezaee-mark.png" alt="Logo Hassan Rezaee" class="nav__logo-mark nav__logo-mark--light">
@@ -35,7 +35,7 @@
                 <a href="work.html" class="nav__link">Expérience</a>
                 <a href="oneclick.html" class="nav__link"><img src="../images/organizations/oneclick.png" alt="" class="brand-logo brand-logo--sm" width="16" height="16">OneClick</a>
                 <a href="research.html" class="nav__link">Recherche</a>
-                <a href="hobbies.html" class="nav__link">Loisirs</a>
+                <a href="hobbies.html" class="nav__link">En dehors du travail</a>
                 <a href="contact.html" class="nav__link">Contact</a>
             </div>
             <div class="nav__tools">
@@ -54,55 +54,79 @@
             </div>
         </div>
     </nav>
-<main id="main">
+
+    <main id="main">
         <section class="page-hero">
             <div class="site-shell">
-                <p class="eyebrow">Notes techniques</p>
+                <p class="eyebrow">Complément à Expérience</p>
                 <h1 class="page-title">Ingénierie en IA</h1>
-                <p class="page-intro">Mes travaux récents portent sur des systèmes d’IA d’entreprise qui s’appuient sur des données propriétaires et des connaissances métier, et qui s’intègrent aux flux et logiciels existants.</p>
-                <p class="page-intro">L’ingénierie autour de ces systèmes comprend la recherche d’information et l’ancrage, l’usage d’outils, des flux structurés, l’évaluation, la revue humaine, le déploiement, l’observabilité et l’intégration aux systèmes d’entreprise.</p>
-                <p class="page-intro">Mon parcours plus large inclut l’apprentissage automatique en production, la prévision, la modélisation prédictive, l’apprentissage profond, la modélisation statistique et les pipelines de données à grande échelle.</p>
+                <p class="page-intro">Notes techniques derrière le cas d’ingénierie chez CAE: comment des systèmes d’IA d’entreprise sont ancrés, contraints, évalués et reliés aux logiciels existants. <a href="work.html#cae-agentic" class="text-link">Lire le cas →</a></p>
             </div>
         </section>
 
         <section class="band band--paper band--flush">
             <div class="site-shell page-grid">
                 <div>
-                    <section class="module" id="agentic">
-                        <h2>Systèmes agentiques d’entreprise</h2>
-                        <p class="prose">En entreprise, les systèmes d’IA utiles ont souvent besoin d’information et de capacités au-delà du modèle lui-même. Mon travail inclut des systèmes qui récupèrent des connaissances propriétaires, utilisent des données structurées, appellent des outils déterministes, maintiennent l’état d’un flux et produisent des sorties pour revue ou pour des systèmes en aval.</p>
-                        <p class="prose">La mise en œuvre couvre le comportement du modèle, la logique applicative, les intégrations d’entreprise, l’accès aux données, l’infrastructure infonuagique et le flux utilisateur autour du système.</p>
+                    <section class="module" id="grounding">
+                        <h2>Ancrage et données d’entreprise</h2>
+                        <p class="prose">Un système interne utile a besoin d’accéder à des connaissances propriétaires qui ne sont pas dans les poids du modèle. Mon travail comprend la recherche documentaire sur des documents internes et des données structurées, afin que les réponses puissent être rattachées à des sources que l’organisation fait déjà confiance.</p>
+                        <p class="prose">L’ancrage est traité comme un problème d’ingénierie: quoi indexer, comment le retracer pour une tâche donnée, et comment montrer à l’utilisateur ce que le système a utilisé.</p>
+                    </section>
+                    <section class="module" id="tools">
+                        <h2>Outils déterministes et seuils d’approbation</h2>
+                        <p class="prose">Les modèles de langage proposent; les outils et les flux de travail décident ce qui est permis. Les systèmes sur lesquels je travaille appellent des outils déterministes, conservent l’état du flux et renvoient des sorties structurées, plutôt que de traiter chaque étape comme une génération libre.</p>
+                        <p class="prose">Dans les flux à conséquences, une personne révise ou approuve avant qu’une action soit engagée. Des chemins de repli existent lorsque le système ne doit pas poursuivre.</p>
+                        <figure class="concept">
+                            <svg viewBox="0 0 640 220" role="img" aria-labelledby="conceptTitle conceptDesc">
+                                <title id="conceptTitle">Vue conceptuelle d’un flux de travail agentique d’entreprise</title>
+                                <desc id="conceptDesc">Une demande utilisateur passe à un orchestrateur qui peut retracer des connaissances, appeler des outils déterministes, puis envoyer la sortie à une revue humaine avant les systèmes en aval.</desc>
+                                <rect x="8" y="70" width="110" height="64" rx="8" fill="none" stroke="currentColor"/>
+                                <text x="63" y="107" text-anchor="middle" font-size="13" fill="currentColor">Utilisateur</text>
+                                <rect x="148" y="70" width="130" height="64" rx="8" fill="none" stroke="currentColor"/>
+                                <text x="213" y="107" text-anchor="middle" font-size="13" fill="currentColor">Orchestrateur</text>
+                                <rect x="308" y="18" width="130" height="54" rx="8" fill="none" stroke="currentColor"/>
+                                <text x="373" y="50" text-anchor="middle" font-size="13" fill="currentColor">Connaissances</text>
+                                <rect x="308" y="132" width="130" height="54" rx="8" fill="none" stroke="currentColor"/>
+                                <text x="373" y="164" text-anchor="middle" font-size="13" fill="currentColor">Outils</text>
+                                <rect x="468" y="70" width="130" height="64" rx="8" fill="none" stroke="currentColor"/>
+                                <text x="533" y="100" text-anchor="middle" font-size="13" fill="currentColor">Revue humaine</text>
+                                <text x="533" y="118" text-anchor="middle" font-size="11" fill="currentColor">puis systèmes</text>
+                                <path d="M118 102 H148" fill="none" stroke="currentColor"/>
+                                <path d="M278 102 H308" fill="none" stroke="currentColor"/>
+                                <path d="M373 72 V64" fill="none" stroke="currentColor"/>
+                                <path d="M373 132 V118" fill="none" stroke="currentColor"/>
+                                <path d="M438 102 H468" fill="none" stroke="currentColor"/>
+                            </svg>
+                            <figcaption>Vue conceptuelle des relations dans la description publique. Ce n’est pas un schéma d’architecture de l’infrastructure de CAE.</figcaption>
+                        </figure>
                     </section>
                     <section class="module" id="evaluation">
-                        <h2>Évaluation et fiabilité</h2>
-                        <p class="prose">Mon travail comprend l’évaluation au niveau des tâches, l’analyse des échecs, des contrôles de régression et des boucles de rétroaction avec des experts métier et des utilisateurs.</p>
-                        <p class="prose">Pour les systèmes agentiques, l’évaluation porte aussi sur la pertinence de l’information récupérée, l’usage correct des outils, le respect des contraintes de flux et l’utilité réelle des sorties.</p>
+                        <h2>Évaluation, analyse des échecs et itération</h2>
+                        <p class="prose">Les contrôles au niveau de la tâche demandent si le système a retracé la bonne information, utilisé les outils correctement, respecté les contraintes et produit quelque chose qu’un expert du domaine peut utiliser. Les échecs sont examinés plutôt que dilués dans une moyenne.</p>
+                        <p class="prose">Des contrôles de régression et une revue avec les utilisateurs ferment la boucle. C’est plus proche d’une validation d’ingénierie que d’une démonstration ponctuelle.</p>
                     </section>
-                    <section class="module" id="production-ml">
-                        <h2>Apprentissage automatique en production</h2>
-                        <p class="prose">Avant la génération actuelle de systèmes agentiques, une grande part de mon travail portait sur l’apprentissage automatique en production: prévision, modélisation prédictive, apprentissage profond, traitement de données à grande échelle, validation, inférence planifiée, surveillance et intégration aux flux opérationnels.</p>
-                    </section>
-                    <section class="module" id="responsible-systems">
-                        <h2>Revue humaine</h2>
-                        <p class="prose">Dans les flux sensibles ou à fort enjeu, je conçois des systèmes avec des chemins explicites de revue, d’approbation et de repli, plutôt que de traiter chaque tâche comme autonome.</p>
+                    <section class="module" id="deployment">
+                        <h2>Déploiement et intégration</h2>
+                        <p class="prose">Le travail agentique actuel comprend le déploiement infonuagique et l’intégration aux systèmes d’entreprise existants. Une partie de l’intégration est encore en cours; cette page ne revendique pas un déploiement complet en production de chaque flux.</p>
+                        <p class="prose">L’apprentissage automatique en production antérieur chez CAE comprenait la prévision, la maintenance prédictive, l’inférence planifiée et la surveillance à l’intérieur de flux opérationnels. Ces systèmes correspondent à une étape différente du travail agentique actuel.</p>
                     </section>
                     <section class="module" id="technologies">
                         <h2>Technologies choisies</h2>
-                        <p class="prose">Python, PyTorch, Azure, Microsoft Foundry, Azure Machine Learning, Databricks, PySpark, FastAPI, Docker, SQL</p>
+                        <p class="prose">Liées à un travail vérifié, et non utilisées partout: Python, PyTorch, Azure, Databricks, PySpark, FastAPI, Docker, SQL. OneClick utilise Django, PostgreSQL, des conteneurs Azure, Stripe et AWS SES. React apparaît en ingénierie produit lorsqu’une interface web est nécessaire.</p>
+                    </section>
+                    <section class="module" id="responsible-systems">
+                        <h2>Revue humaine</h2>
+                        <p class="prose">Les flux sensibles conservent une revue explicite, une approbation et des chemins de repli. Les contraintes de confidentialité et d’accès sont traitées comme des limites de conception, pas comme des ajouts tardifs.</p>
                     </section>
                 </div>
                 <aside class="page-rail">
                     <nav class="side-index" aria-label="Sur cette page">
-                        <a href="#agentic">Systèmes agentiques</a>
+                        <a href="#grounding">Ancrage</a>
+                        <a href="#tools">Outils et revue</a>
                         <a href="#evaluation">Évaluation</a>
-                        <a href="#production-ml">ML en production</a>
-                        <a href="#responsible-systems">Revue humaine</a>
+                        <a href="#deployment">Déploiement</a>
                         <a href="#technologies">Technologies</a>
                     </nav>
-                    <div class="tech-group">
-                        <h2>Technologies</h2>
-                        <p>Python, PyTorch, Azure, Microsoft Foundry, Azure Machine Learning, Databricks, PySpark, FastAPI, Docker, SQL</p>
-                    </div>
                 </aside>
             </div>
         </section>
@@ -112,7 +136,7 @@
         <div class="site-shell footer-grid">
             <div>
                 <p class="footer__name">Hassan Rezaee</p>
-                <p class="footer__text">Montréal, Canada</p>
+                <p class="footer__text">Région de Montréal, Canada</p>
             </div>
             <div class="footer__links">
                 <a href="https://www.linkedin.com/in/hassan-rezaee" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
@@ -122,6 +146,7 @@
             </div>
         </div>
     </footer>
+
     <script src="../site.js"></script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f7086275d115490a9a436e477aad2848"}'></script><!-- End Cloudflare Web Analytics -->
 </body>

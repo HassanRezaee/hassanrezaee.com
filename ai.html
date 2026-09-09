@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Engineering — Hassan Rezaee</title>
-    <meta name="description" content="Hassan Rezaee's AI engineering work: enterprise agentic systems, evaluation, and production machine learning.">
+    <meta name="description" content="Technical notes on grounding, deterministic tools, evaluation, and deployment for enterprise AI systems.">
     <link rel="canonical" href="https://hassanrezaee.com/ai.html">
     <link rel="alternate" hreflang="en" href="https://hassanrezaee.com/ai.html">
     <link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/ai.html">
     <link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/ai.html">
     <meta property="og:title" content="AI Engineering — Hassan Rezaee">
-    <meta property="og:description" content="Enterprise agentic systems, evaluation, and production machine learning.">
+    <meta property="og:description" content="Grounding, tools, evaluation, and integration for enterprise AI systems.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hassanrezaee.com/ai.html">
-    <meta property="og:image" content="https://hassanrezaee.com/images/hassan-rezaee-mark.png">
+    <meta property="og:image" content="https://hassanrezaee.com/images/og/work.jpg">
     <link rel="icon" href="images/hassan-rezaee-mark.svg" type="image/svg+xml">
     <link rel="icon" type="image/png" sizes="32x32" href="images/hassan-rezaee-mark-32.png">
     <link rel="icon" type="image/png" sizes="48x48" href="images/hassan-rezaee-mark-48.png">
@@ -35,7 +35,7 @@
                 <a href="work.html" class="nav__link">Work</a>
                 <a href="oneclick.html" class="nav__link"><img src="images/organizations/oneclick.png" alt="" class="brand-logo brand-logo--sm" width="16" height="16">OneClick</a>
                 <a href="research.html" class="nav__link">Research</a>
-                <a href="hobbies.html" class="nav__link">Hobbies</a>
+                <a href="hobbies.html" class="nav__link">Outside work</a>
                 <a href="contact.html" class="nav__link">Contact</a>
             </div>
             <div class="nav__tools">
@@ -58,52 +58,75 @@
     <main id="main">
         <section class="page-hero">
             <div class="site-shell">
-                <p class="eyebrow">Technical notes</p>
+                <p class="eyebrow">Companion to Work</p>
                 <h1 class="page-title">AI Engineering</h1>
-                <p class="page-intro">My recent work has focused on enterprise AI systems that operate over proprietary data and domain knowledge and interact with existing workflows and software.</p>
-                <p class="page-intro">The engineering around these systems includes retrieval and grounding, tool use, structured workflows, evaluation, human review, deployment, observability, and integration with enterprise systems.</p>
-                <p class="page-intro">My broader background includes production machine learning, forecasting, predictive modeling, deep learning, statistical modeling, and large-scale data pipelines.</p>
+                <p class="page-intro">Technical notes behind the CAE engineering case: how enterprise AI systems are grounded, constrained, evaluated, and connected to existing software. <a href="work.html#cae-agentic" class="text-link">Read the case →</a></p>
             </div>
         </section>
 
         <section class="band band--paper band--flush">
             <div class="site-shell page-grid">
                 <div>
-                    <section class="module" id="agentic">
-                        <h2>Enterprise agentic systems</h2>
-                        <p class="prose">In enterprise settings, useful AI systems often need access to information and capabilities outside the model itself. My work includes systems that retrieve proprietary knowledge, use structured data, call deterministic tools, maintain workflow state, and return outputs for user review or downstream systems.</p>
-                        <p class="prose">The implementation work spans model behavior, application logic, enterprise integrations, data access, cloud infrastructure, and the user workflow around the system.</p>
+                    <section class="module" id="grounding">
+                        <h2>Grounding and enterprise data</h2>
+                        <p class="prose">Useful internal systems need access to proprietary knowledge that is not in the model weights. My work includes retrieval over internal documents and structured data so answers can be tied to sources the organisation already trusts.</p>
+                        <p class="prose">Grounding is treated as an engineering problem: what to index, how to retrieve it for a given task, and how to show the user what the system used.</p>
+                    </section>
+                    <section class="module" id="tools">
+                        <h2>Deterministic tools and approval boundaries</h2>
+                        <p class="prose">Language models propose; tools and workflows decide what is allowed. Systems I work on call deterministic tools, keep workflow state, and return structured outputs rather than treating every step as free-form generation.</p>
+                        <p class="prose">In consequential workflows, a person reviews or approves before anything is committed. Fallback paths exist when the system should not proceed.</p>
+                        <figure class="concept">
+                            <svg viewBox="0 0 640 220" role="img" aria-labelledby="conceptTitle conceptDesc">
+                                <title id="conceptTitle">Conceptual overview of an enterprise agentic workflow</title>
+                                <desc id="conceptDesc">User request flows to an orchestrator that may retrieve knowledge, call deterministic tools, then send output to human review before downstream systems.</desc>
+                                <rect x="8" y="70" width="110" height="64" rx="8" fill="none" stroke="currentColor"/>
+                                <text x="63" y="107" text-anchor="middle" font-size="13" fill="currentColor">User</text>
+                                <rect x="148" y="70" width="130" height="64" rx="8" fill="none" stroke="currentColor"/>
+                                <text x="213" y="107" text-anchor="middle" font-size="13" fill="currentColor">Orchestrator</text>
+                                <rect x="308" y="18" width="130" height="54" rx="8" fill="none" stroke="currentColor"/>
+                                <text x="373" y="50" text-anchor="middle" font-size="13" fill="currentColor">Knowledge</text>
+                                <rect x="308" y="132" width="130" height="54" rx="8" fill="none" stroke="currentColor"/>
+                                <text x="373" y="164" text-anchor="middle" font-size="13" fill="currentColor">Tools</text>
+                                <rect x="468" y="70" width="130" height="64" rx="8" fill="none" stroke="currentColor"/>
+                                <text x="533" y="100" text-anchor="middle" font-size="13" fill="currentColor">Human review</text>
+                                <text x="533" y="118" text-anchor="middle" font-size="11" fill="currentColor">then systems</text>
+                                <path d="M118 102 H148" fill="none" stroke="currentColor"/>
+                                <path d="M278 102 H308" fill="none" stroke="currentColor"/>
+                                <path d="M373 72 V64" fill="none" stroke="currentColor"/>
+                                <path d="M373 132 V118" fill="none" stroke="currentColor"/>
+                                <path d="M438 102 H468" fill="none" stroke="currentColor"/>
+                            </svg>
+                            <figcaption>Conceptual overview of relationships in the public description. Not a system architecture diagram of CAE infrastructure.</figcaption>
+                        </figure>
                     </section>
                     <section class="module" id="evaluation">
-                        <h2>Evaluation and reliability</h2>
-                        <p class="prose">My work includes task-level evaluation, failure analysis, regression checks, and feedback loops with domain experts and users.</p>
-                        <p class="prose">For agentic systems, evaluation also includes whether the system retrieves the right information, uses tools correctly, follows workflow constraints, and produces outputs that are useful in the actual task.</p>
+                        <h2>Evaluation, failure analysis, and iteration</h2>
+                        <p class="prose">Task-level checks ask whether the system retrieved the right information, used tools correctly, followed constraints, and produced something a domain expert can use. Failures are inspected rather than averaged away.</p>
+                        <p class="prose">Regression checks and review with users close the loop. That is closer to engineering validation than to a one-off demo.</p>
                     </section>
-                    <section class="module" id="production-ml">
-                        <h2>Production machine learning</h2>
-                        <p class="prose">Before the current generation of agentic systems, much of my work centered on production machine learning: forecasting, predictive modeling, deep learning, large-scale data processing, validation, scheduled inference, monitoring, and integration with operational workflows.</p>
-                    </section>
-                    <section class="module" id="responsible-systems">
-                        <h2>Human review</h2>
-                        <p class="prose">In sensitive or consequential workflows, I design systems with explicit review, approval, and fallback paths rather than treating every task as autonomous.</p>
+                    <section class="module" id="deployment">
+                        <h2>Deployment and integration</h2>
+                        <p class="prose">Current agentic work includes cloud deployment and integration with existing enterprise systems. Some integration work remains in progress; this page does not claim a completed production rollout of every workflow.</p>
+                        <p class="prose">Earlier production machine learning at CAE included forecasting, predictive maintenance, scheduled inference, and monitoring inside operational workflows. Those systems are a different stage from the current agentic work.</p>
                     </section>
                     <section class="module" id="technologies">
                         <h2>Selected technologies</h2>
-                        <p class="prose">Python, PyTorch, Azure, Microsoft Foundry, Azure Machine Learning, Databricks, PySpark, FastAPI, Docker, SQL</p>
+                        <p class="prose">Tied to verified work, not used everywhere: Python, PyTorch, Azure, Databricks, PySpark, FastAPI, Docker, SQL. OneClick uses Django, PostgreSQL, Azure containers, Stripe, and AWS SES. React appears in product engineering where a web interface is required.</p>
+                    </section>
+                    <section class="module" id="responsible-systems">
+                        <h2>Human review</h2>
+                        <p class="prose">Sensitive workflows keep explicit review, approval, and fallback paths. Privacy and access constraints are treated as design limits, not afterthoughts.</p>
                     </section>
                 </div>
                 <aside class="page-rail">
                     <nav class="side-index" aria-label="On this page">
-                        <a href="#agentic">Agentic systems</a>
+                        <a href="#grounding">Grounding</a>
+                        <a href="#tools">Tools and review</a>
                         <a href="#evaluation">Evaluation</a>
-                        <a href="#production-ml">Production ML</a>
-                        <a href="#responsible-systems">Human review</a>
+                        <a href="#deployment">Deployment</a>
                         <a href="#technologies">Technologies</a>
                     </nav>
-                    <div class="tech-group">
-                        <h2>Technologies</h2>
-                        <p>Python, PyTorch, Azure, Microsoft Foundry, Azure Machine Learning, Databricks, PySpark, FastAPI, Docker, SQL</p>
-                    </div>
                 </aside>
             </div>
         </section>
@@ -113,7 +136,7 @@
         <div class="site-shell footer-grid">
             <div>
                 <p class="footer__name">Hassan Rezaee</p>
-                <p class="footer__text">Montreal, Canada</p>
+                <p class="footer__text">Montréal area, Canada</p>
             </div>
             <div class="footer__links">
                 <a href="https://www.linkedin.com/in/hassan-rezaee" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>

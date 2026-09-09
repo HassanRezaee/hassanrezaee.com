@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /deprecated/
+Disallow: /handoff/
 
 Sitemap: https://hassanrezaee.com/sitemap.xml

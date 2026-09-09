@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OneClick — Hassan Rezaee</title>
-    <meta name="description" content="OneClick is pre-launch practice-management software for mental-health professionals. Hassan Rezaee is co-founder and technical lead.">
+    <meta name="description" content="OneClick is practice-management software for mental-health professionals. Hassan Rezaee is co-founder and technical lead. Launch planned October 2026.">
     <link rel="canonical" href="https://hassanrezaee.com/oneclick.html">
     <link rel="alternate" hreflang="en" href="https://hassanrezaee.com/oneclick.html">
     <link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/oneclick.html">
     <link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/oneclick.html">
     <meta property="og:title" content="OneClick — Co-founder & Technical Lead">
-    <meta property="og:description" content="Practice-management software for mental-health professionals, developed with clinicians. Pre-launch.">
+    <meta property="og:description" content="Practice-management software for mental-health professionals, developed with clinicians. Launch planned October 2026.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hassanrezaee.com/oneclick.html">
     <meta property="og:image" content="https://hassanrezaee.com/images/og/oneclick.jpg">
@@ -44,7 +44,7 @@
             <div class="nav__links" id="navLinks">
                 <a href="./" class="nav__link">Home</a>
                 <a href="work.html" class="nav__link">Work</a>
-                <a href="oneclick.html" class="nav__link nav__link--active"><img src="images/organizations/oneclick.png" alt="" class="brand-logo brand-logo--sm" width="16" height="16">OneClick</a>
+                <a href="oneclick.html" class="nav__link nav__link--active">OneClick</a>
                 <a href="research.html" class="nav__link">Research</a>
                 <a href="hobbies.html" class="nav__link">Outside work</a>
                 <a href="contact.html" class="nav__link">Contact</a>
@@ -72,53 +72,94 @@
                 <p class="eyebrow">Founder case</p>
                 <h1 class="page-title brand-lockup"><img src="images/organizations/oneclick.png" alt="" class="brand-logo brand-logo--mark" width="48" height="48">OneClick</h1>
                 <p class="hero-secondary">Practice-management software for mental-health professionals.</p>
-                <p class="meta">Co-founder &amp; Technical Lead · 2024–present · Pre-launch</p>
-                <p class="mt-3"><a href="https://www.oneclickreceipts.com/?utm_source=hassanrezaee.com&amp;utm_medium=referral&amp;utm_campaign=founder_site" target="_blank" rel="noopener noreferrer" class="action-primary"><img src="images/organizations/oneclick.png" alt="" class="brand-logo brand-logo--sm" width="16" height="16">Visit OneClick →</a></p>
+                <p class="meta">Co-founder &amp; Technical Lead · 2024–present · Launch planned October 2026</p>
+                <p class="mt-3"><a href="https://www.oneclickreceipts.com/?utm_source=hassanrezaee.com&amp;utm_medium=referral&amp;utm_campaign=founder_site" target="_blank" rel="noopener noreferrer" class="action-primary">Visit OneClick →</a></p>
             </div>
         </section>
 
         <section class="band band--paper band--flush">
-            <div class="site-shell">
-                <h2 class="module-title">The workflow problem</h2>
-                <p class="prose mt-3">Independent clinicians still run a practice across calendars, notes, billing, and messages that do not share a coherent workflow. The cost is time spent on administration rather than on the work they trained for.</p>
-                <p class="prose">OneClick is administrative software. It is not clinical decision support and is not intended to replace professional clinical judgment.</p>
-            </div>
-        </section>
-
-        <section class="band band--warm">
-            <div class="site-shell">
-                <h2 class="module-title">Ownership</h2>
-                <p class="prose mt-3">I co-founded OneClick and lead the technical work: customer discovery, clinician co-design, product decisions, architecture, engineering, cloud infrastructure, security, integrations, deployment, and operations. The work has been built alongside CAE employment.</p>
-            </div>
-        </section>
-
-        <section class="band band--paper">
-            <div class="site-shell">
-                <h2 class="module-title">How clinician feedback changes the product</h2>
-                <p class="prose mt-3">Decisions come from conversations, testing, and co-design with practicing clinicians. That feedback changes which workflows we build first, how screens are sequenced, and which automations are worth the engineering cost.</p>
-                <p class="prose">Specific named examples stay off this page until they are cleared for public use. The method is documented; individual clinic stories are not.</p>
+            <div class="site-shell study-split">
+                <div>
+                    <h2 class="module-title">The operational problem</h2>
+                    <p class="prose mt-3">Independent mental-health professionals often manage scheduling, billing, receipts, reminders, and client information across disconnected tools and repetitive administrative workflows.</p>
+                    <p class="prose">OneClick is administrative software for that work. It does not replace professional clinical judgment.</p>
+                </div>
+                <figure class="shot">
+                    <img src="images/oneclick/share-calendar.png" width="1072" height="1184" alt="OneClick Share Calendar screen with demonstration data for a 50-minute individual session">
+                    <figcaption>Share Calendar · demonstration data</figcaption>
+                </figure>
             </div>
         </section>
 
         <section class="band band--surface">
             <div class="site-shell">
-                <h2 class="module-title">Architecture, in public</h2>
-                <p class="prose mt-3">A compact stack used to ship and operate the product:</p>
-                <ul class="arch-list">
-                    <li>Django and REST APIs</li>
-                    <li>PostgreSQL</li>
-                    <li>Azure containers</li>
-                    <li>Stripe for payments</li>
-                    <li>AWS SES for email</li>
-                </ul>
-                <p class="prose mt-3">One substantive decision: keep the product an operations system with a conventional web architecture, rather than wrapping a language model around clinical work. Automation belongs in administration. Anything that would imply clinical AI stays out.</p>
+                <h2 class="module-title">How a week of practice actually moves</h2>
+                <ol class="flow" aria-label="OneClick practice workflow">
+                    <li><strong>Schedule</strong><span>availability and bookings</span></li>
+                    <li><strong>Session</strong><span>the appointment happens</span></li>
+                    <li><strong>Receipt / invoice</strong><span>generated from the calendar</span></li>
+                    <li><strong>Delivery</strong><span>send one, or a week at once</span></li>
+                    <li><strong>Reporting</strong><span>practice operations, not clinical notes</span></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="band band--paper">
+            <div class="site-shell study-split">
+                <div>
+                    <h2 class="module-title">What the product does</h2>
+                    <ul class="feature-grid">
+                        <li>Scheduling and booking confirmations</li>
+                        <li>Receipts and invoicing</li>
+                        <li>Reminders and client communication</li>
+                        <li>Client information</li>
+                        <li>Billing and expensing</li>
+                        <li>Secure delivery</li>
+                        <li>Practice reporting</li>
+                        <li>Authentication and privacy controls</li>
+                    </ul>
+                </div>
+                <figure class="shot shot--receipt">
+                    <img src="images/oneclick/receipts.png" width="1568" height="884" alt="Demonstration OneClick receipt for a psychologist consultation, using sample client data">
+                    <figcaption>Receipt output · demonstration data</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="band band--warm">
+            <div class="site-shell">
+                <h2 class="module-title">Responsibilities</h2>
+                <p class="prose mt-3">I co-founded OneClick and lead technical delivery: customer discovery, clinician co-design, product decisions, architecture, full-stack engineering, cloud infrastructure, security, integrations, deployment, and day-to-day operations. The product has been built alongside CAE employment, not as a replacement for it.</p>
+            </div>
+        </section>
+
+        <section class="band band--paper">
+            <div class="site-shell">
+                <h2 class="module-title">A decision that came from clinicians</h2>
+                <p class="prose mt-3">Co-design sessions — seven rounds with 38 mental-health professionals, plus input from 12 psychologists — kept returning to the same load: receipts after every session, clicked one by one. The product therefore generates receipts and invoices from the calendar, reuses details from previous sessions, and lets a clinician review once and send a week of receipts in a single action.</p>
+                <p class="prose">That is why OneClick stayed on scheduling, billing, receipts, delivery, and reporting, rather than becoming a clinical-notes product.</p>
+            </div>
+        </section>
+
+        <section class="band band--surface">
+            <div class="site-shell">
+                <h2 class="module-title">Architecture</h2>
+                <div class="arch-map">
+                    <div class="arch-map__row"><strong>Interface</strong><span>Web application (React where a browser interface is required)</span></div>
+                    <div class="arch-map__row"><strong>Application</strong><span>Django and REST APIs</span></div>
+                    <div class="arch-map__row"><strong>Data</strong><span>PostgreSQL</span></div>
+                    <div class="arch-map__row"><strong>Payments</strong><span>Stripe</span></div>
+                    <div class="arch-map__row"><strong>Email</strong><span>AWS SES</span></div>
+                    <div class="arch-map__row"><strong>Runtime</strong><span>Azure containers, which I operate</span></div>
+                </div>
+                <p class="prose mt-3">The product is an operations system with a conventional web architecture, not a language model wrapped around clinical work.</p>
             </div>
         </section>
 
         <section class="band band--paper" id="status">
             <div class="site-shell">
                 <h2 class="module-title">Stage</h2>
-                <p class="prose mt-3">OneClick is preparing for launch. Next public milestone: launch. This page reviewed September 2026.</p>
+                <p class="prose mt-3">OneClick is in active preparation for a public launch in October 2026.</p>
                 <p class="mt-3"><a href="https://www.oneclickreceipts.com/?utm_source=hassanrezaee.com&amp;utm_medium=referral&amp;utm_campaign=founder_site" target="_blank" rel="noopener noreferrer" class="action-primary">Visit OneClick →</a></p>
                 <p class="mt-3"><a href="https://www.linkedin.com/company/oneclickreceipts" target="_blank" rel="noopener noreferrer" class="text-link">OneClick on LinkedIn →</a></p>
             </div>

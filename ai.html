@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Engineering — Hassan Rezaee</title>
-    <meta name="description" content="Technical notes on grounding, deterministic tools, evaluation, and deployment for enterprise AI systems.">
+    <meta name="description" content="Technical notes on multi-agent architecture, grounding, evaluation, human oversight, and deployment for enterprise AI systems.">
     <link rel="canonical" href="https://hassanrezaee.com/ai.html">
     <link rel="alternate" hreflang="en" href="https://hassanrezaee.com/ai.html">
     <link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/ai.html">
     <link rel="alternate" hreflang="x-default" href="https://hassanrezaee.com/ai.html">
     <meta property="og:title" content="AI Engineering — Hassan Rezaee">
-    <meta property="og:description" content="Grounding, tools, evaluation, and integration for enterprise AI systems.">
+    <meta property="og:description" content="Multi-agent architecture, grounding, evaluation, and integration for enterprise AI systems.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hassanrezaee.com/ai.html">
     <meta property="og:image" content="https://hassanrezaee.com/images/og/work.jpg">
@@ -33,7 +33,7 @@
             <div class="nav__links" id="navLinks">
                 <a href="./" class="nav__link">Home</a>
                 <a href="work.html" class="nav__link">Work</a>
-                <a href="oneclick.html" class="nav__link"><img src="images/organizations/oneclick.png" alt="" class="brand-logo brand-logo--sm" width="16" height="16">OneClick</a>
+                <a href="oneclick.html" class="nav__link">OneClick</a>
                 <a href="research.html" class="nav__link">Research</a>
                 <a href="hobbies.html" class="nav__link">Outside work</a>
                 <a href="contact.html" class="nav__link">Contact</a>
@@ -60,7 +60,7 @@
             <div class="site-shell">
                 <p class="eyebrow">Companion to Work</p>
                 <h1 class="page-title">AI Engineering</h1>
-                <p class="page-intro">Technical notes behind the CAE engineering case: how enterprise AI systems are grounded, constrained, evaluated, and connected to existing software. <a href="work.html#cae-agentic" class="text-link">Read the case →</a></p>
+                <p class="page-intro">Engineering judgment behind reliable enterprise AI: multi-agent architecture, grounding, evaluation, human oversight, and integration with existing software. <a href="work.html#cae-agentic" class="text-link">Read the manufacturing case →</a></p>
             </div>
         </section>
 
@@ -68,41 +68,27 @@
             <div class="site-shell page-grid">
                 <div>
                     <section class="module" id="grounding">
-                        <h2>Grounding and enterprise data</h2>
-                        <p class="prose">Useful internal systems need access to proprietary knowledge that is not in the model weights. My work includes retrieval over internal documents and structured data so answers can be tied to sources the organisation already trusts.</p>
-                        <p class="prose">Grounding is treated as an engineering problem: what to index, how to retrieve it for a given task, and how to show the user what the system used.</p>
+                        <h2>Grounding and enterprise knowledge</h2>
+                        <p class="prose">Useful internal systems need access to proprietary knowledge that is not in the model weights. Grounding is treated as an engineering problem: what to index, how to retrieve it for a given task, and how to show the user what the system used.</p>
                     </section>
                     <section class="module" id="tools">
-                        <h2>Deterministic tools and approval boundaries</h2>
-                        <p class="prose">Language models propose; tools and workflows decide what is allowed. Systems I work on call deterministic tools, keep workflow state, and return structured outputs rather than treating every step as free-form generation.</p>
-                        <p class="prose">In consequential workflows, a person reviews or approves before anything is committed. Fallback paths exist when the system should not proceed.</p>
+                        <h2>Multi-agent architecture and constrained execution</h2>
+                        <p class="prose">Language models are components inside controlled software, not autonomous systems. Work I do in this area includes coordinating agent responsibilities, keeping structured state, and returning outputs that can be reviewed rather than treating every step as free-form generation.</p>
+                        <p class="prose">Reliability comes from clear boundaries, validation, human oversight, and explicit failure handling. Fallback paths exist when the system should not proceed.</p>
                         <figure class="concept">
-                            <svg viewBox="0 0 640 220" role="img" aria-labelledby="conceptTitle conceptDesc">
-                                <title id="conceptTitle">Conceptual overview of an enterprise agentic workflow</title>
-                                <desc id="conceptDesc">User request flows to an orchestrator that may retrieve knowledge, call deterministic tools, then send output to human review before downstream systems.</desc>
-                                <rect x="8" y="70" width="110" height="64" rx="8" fill="none" stroke="currentColor"/>
-                                <text x="63" y="107" text-anchor="middle" font-size="13" fill="currentColor">User</text>
-                                <rect x="148" y="70" width="130" height="64" rx="8" fill="none" stroke="currentColor"/>
-                                <text x="213" y="107" text-anchor="middle" font-size="13" fill="currentColor">Orchestrator</text>
-                                <rect x="308" y="18" width="130" height="54" rx="8" fill="none" stroke="currentColor"/>
-                                <text x="373" y="50" text-anchor="middle" font-size="13" fill="currentColor">Knowledge</text>
-                                <rect x="308" y="132" width="130" height="54" rx="8" fill="none" stroke="currentColor"/>
-                                <text x="373" y="164" text-anchor="middle" font-size="13" fill="currentColor">Tools</text>
-                                <rect x="468" y="70" width="130" height="64" rx="8" fill="none" stroke="currentColor"/>
-                                <text x="533" y="100" text-anchor="middle" font-size="13" fill="currentColor">Human review</text>
-                                <text x="533" y="118" text-anchor="middle" font-size="11" fill="currentColor">then systems</text>
-                                <path d="M118 102 H148" fill="none" stroke="currentColor"/>
-                                <path d="M278 102 H308" fill="none" stroke="currentColor"/>
-                                <path d="M373 72 V64" fill="none" stroke="currentColor"/>
-                                <path d="M373 132 V118" fill="none" stroke="currentColor"/>
-                                <path d="M438 102 H468" fill="none" stroke="currentColor"/>
-                            </svg>
-                            <figcaption>Conceptual overview of relationships in the public description. Not a system architecture diagram of CAE infrastructure.</figcaption>
+                            <div class="cells">
+                                <p><strong>Multi-agent architecture</strong>Coordinated software with defined responsibilities.</p>
+                                <p><strong>Grounding</strong>Enterprise knowledge outside the model weights.</p>
+                                <p><strong>Structured state</strong>Application logic that can be inspected and constrained.</p>
+                                <p><strong>Human oversight</strong>Review, approval, and fallback when needed.</p>
+                                <p><strong>Evaluation</strong>Task completion, consistency, and failure analysis.</p>
+                                <p><strong>Enterprise integration</strong>Cloud deployment alongside existing software.</p>
+                            </div>
                         </figure>
                     </section>
                     <section class="module" id="evaluation">
                         <h2>Evaluation, failure analysis, and iteration</h2>
-                        <p class="prose">Task-level checks ask whether the system retrieved the right information, used tools correctly, followed constraints, and produced something a domain expert can use. Failures are inspected rather than averaged away.</p>
+                        <p class="prose">Task-level checks ask whether the system completed the assigned work, followed constraints, handled failures, and produced something a domain expert can use. Failures are inspected rather than averaged away.</p>
                         <p class="prose">Regression checks and review with users close the loop. That is closer to engineering validation than to a one-off demo.</p>
                     </section>
                     <section class="module" id="deployment">
@@ -122,7 +108,7 @@
                 <aside class="page-rail">
                     <nav class="side-index" aria-label="On this page">
                         <a href="#grounding">Grounding</a>
-                        <a href="#tools">Tools and review</a>
+                        <a href="#tools">Architecture</a>
                         <a href="#evaluation">Evaluation</a>
                         <a href="#deployment">Deployment</a>
                         <a href="#technologies">Technologies</a>

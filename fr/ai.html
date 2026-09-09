@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingénierie en IA — Hassan Rezaee</title>
-    <meta name="description" content="Notes techniques sur l’ancrage, les outils déterministes, l’évaluation et le déploiement de systèmes d’IA d’entreprise.">
+    <meta name="description" content="Notes techniques sur l’architecture multiagent, l’ancrage, l’évaluation, la supervision humaine et le déploiement de systèmes d’IA d’entreprise.">
     <link rel="canonical" href="https://hassanrezaee.com/fr/ai.html">
     <link rel="alternate" hreflang="en" href="https://hassanrezaee.com/ai.html">
     <link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/ai.html">
@@ -33,7 +33,7 @@
             <div class="nav__links" id="navLinks">
                 <a href="./" class="nav__link">Accueil</a>
                 <a href="work.html" class="nav__link">Expérience</a>
-                <a href="oneclick.html" class="nav__link"><img src="../images/organizations/oneclick.png" alt="" class="brand-logo brand-logo--sm" width="16" height="16">OneClick</a>
+                <a href="oneclick.html" class="nav__link">OneClick</a>
                 <a href="research.html" class="nav__link">Recherche</a>
                 <a href="hobbies.html" class="nav__link">En dehors du travail</a>
                 <a href="contact.html" class="nav__link">Contact</a>
@@ -60,7 +60,7 @@
             <div class="site-shell">
                 <p class="eyebrow">Complément à Expérience</p>
                 <h1 class="page-title">Ingénierie en IA</h1>
-                <p class="page-intro">Notes techniques derrière le cas d’ingénierie chez CAE: comment des systèmes d’IA d’entreprise sont ancrés, contraints, évalués et reliés aux logiciels existants. <a href="work.html#cae-agentic" class="text-link">Lire le cas →</a></p>
+                <p class="page-intro">Jugement d’ingénierie derrière une IA d’entreprise fiable: architecture multiagent, ancrage, évaluation, supervision humaine et intégration aux logiciels existants. <a href="work.html#cae-agentic" class="text-link">Lire le cas manufacturier →</a></p>
             </div>
         </section>
 
@@ -68,41 +68,27 @@
             <div class="site-shell page-grid">
                 <div>
                     <section class="module" id="grounding">
-                        <h2>Ancrage et données d’entreprise</h2>
-                        <p class="prose">Un système interne utile a besoin d’accéder à des connaissances propriétaires qui ne sont pas dans les poids du modèle. Mon travail comprend la recherche documentaire sur des documents internes et des données structurées, afin que les réponses puissent être rattachées à des sources que l’organisation fait déjà confiance.</p>
-                        <p class="prose">L’ancrage est traité comme un problème d’ingénierie: quoi indexer, comment le retracer pour une tâche donnée, et comment montrer à l’utilisateur ce que le système a utilisé.</p>
+                        <h2>Ancrage et connaissances d’entreprise</h2>
+                        <p class="prose">Un système interne utile a besoin d’accéder à des connaissances propriétaires qui ne sont pas dans les poids du modèle. L’ancrage est traité comme un problème d’ingénierie: quoi indexer, comment le rechercher pour une tâche donnée, et comment montrer à l’utilisateur ce que le système a utilisé.</p>
                     </section>
                     <section class="module" id="tools">
-                        <h2>Outils déterministes et seuils d’approbation</h2>
-                        <p class="prose">Les modèles de langage proposent; les outils et les flux de travail décident ce qui est permis. Les systèmes sur lesquels je travaille appellent des outils déterministes, conservent l’état du flux et renvoient des sorties structurées, plutôt que de traiter chaque étape comme une génération libre.</p>
-                        <p class="prose">Dans les flux à conséquences, une personne révise ou approuve avant qu’une action soit engagée. Des chemins de repli existent lorsque le système ne doit pas poursuivre.</p>
+                        <h2>Architecture multiagent et exécution contrainte</h2>
+                        <p class="prose">Les modèles de langage sont des composantes à l’intérieur d’un logiciel contrôlé, pas des systèmes autonomes. Le travail dans ce domaine comprend la coordination des responsabilités des agents, la conservation d’un état structuré, et le renvoi de sorties qui peuvent être révisées, plutôt que de traiter chaque étape comme une génération libre.</p>
+                        <p class="prose">La fiabilité vient de limites claires, de la validation, de la supervision humaine et d’une gestion explicite des échecs. Des chemins de repli existent lorsque le système ne doit pas poursuivre.</p>
                         <figure class="concept">
-                            <svg viewBox="0 0 640 220" role="img" aria-labelledby="conceptTitle conceptDesc">
-                                <title id="conceptTitle">Vue conceptuelle d’un flux de travail agentique d’entreprise</title>
-                                <desc id="conceptDesc">Une demande utilisateur passe à un orchestrateur qui peut retracer des connaissances, appeler des outils déterministes, puis envoyer la sortie à une revue humaine avant les systèmes en aval.</desc>
-                                <rect x="8" y="70" width="110" height="64" rx="8" fill="none" stroke="currentColor"/>
-                                <text x="63" y="107" text-anchor="middle" font-size="13" fill="currentColor">Utilisateur</text>
-                                <rect x="148" y="70" width="130" height="64" rx="8" fill="none" stroke="currentColor"/>
-                                <text x="213" y="107" text-anchor="middle" font-size="13" fill="currentColor">Orchestrateur</text>
-                                <rect x="308" y="18" width="130" height="54" rx="8" fill="none" stroke="currentColor"/>
-                                <text x="373" y="50" text-anchor="middle" font-size="13" fill="currentColor">Connaissances</text>
-                                <rect x="308" y="132" width="130" height="54" rx="8" fill="none" stroke="currentColor"/>
-                                <text x="373" y="164" text-anchor="middle" font-size="13" fill="currentColor">Outils</text>
-                                <rect x="468" y="70" width="130" height="64" rx="8" fill="none" stroke="currentColor"/>
-                                <text x="533" y="100" text-anchor="middle" font-size="13" fill="currentColor">Revue humaine</text>
-                                <text x="533" y="118" text-anchor="middle" font-size="11" fill="currentColor">puis systèmes</text>
-                                <path d="M118 102 H148" fill="none" stroke="currentColor"/>
-                                <path d="M278 102 H308" fill="none" stroke="currentColor"/>
-                                <path d="M373 72 V64" fill="none" stroke="currentColor"/>
-                                <path d="M373 132 V118" fill="none" stroke="currentColor"/>
-                                <path d="M438 102 H468" fill="none" stroke="currentColor"/>
-                            </svg>
-                            <figcaption>Vue conceptuelle des relations dans la description publique. Ce n’est pas un schéma d’architecture de l’infrastructure de CAE.</figcaption>
+                            <div class="cells">
+                                <p><strong>Architecture multiagent</strong>Un logiciel coordonné, avec des responsabilités définies.</p>
+                                <p><strong>Ancrage</strong>Des connaissances d’entreprise hors des poids du modèle.</p>
+                                <p><strong>État structuré</strong>Une logique applicative inspectable et contraignable.</p>
+                                <p><strong>Supervision humaine</strong>Revue, approbation et repli au besoin.</p>
+                                <p><strong>Évaluation</strong>Achèvement de la tâche, cohérence et analyse des échecs.</p>
+                                <p><strong>Intégration d’entreprise</strong>Déploiement infonuagique aux côtés des logiciels existants.</p>
+                            </div>
                         </figure>
                     </section>
                     <section class="module" id="evaluation">
                         <h2>Évaluation, analyse des échecs et itération</h2>
-                        <p class="prose">Les contrôles au niveau de la tâche demandent si le système a retracé la bonne information, utilisé les outils correctement, respecté les contraintes et produit quelque chose qu’un expert du domaine peut utiliser. Les échecs sont examinés plutôt que dilués dans une moyenne.</p>
+                        <p class="prose">Les contrôles au niveau de la tâche demandent si le système a mené le travail assigné, respecté les contraintes, géré les échecs et produit quelque chose qu’un expert du domaine peut utiliser. Les échecs sont examinés plutôt que dilués dans une moyenne.</p>
                         <p class="prose">Des contrôles de régression et une revue avec les utilisateurs ferment la boucle. C’est plus proche d’une validation d’ingénierie que d’une démonstration ponctuelle.</p>
                     </section>
                     <section class="module" id="deployment">
@@ -122,7 +108,7 @@
                 <aside class="page-rail">
                     <nav class="side-index" aria-label="Sur cette page">
                         <a href="#grounding">Ancrage</a>
-                        <a href="#tools">Outils et revue</a>
+                        <a href="#tools">Architecture</a>
                         <a href="#evaluation">Évaluation</a>
                         <a href="#deployment">Déploiement</a>
                         <a href="#technologies">Technologies</a>

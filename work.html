@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work — Hassan Rezaee</title>
-    <meta name="description" content="Selected engineering cases: enterprise agentic workflows at CAE, OneClick, and production machine learning including predictive maintenance and forecasting.">
+    <meta name="description" content="Selected engineering cases: enterprise agentic AI in manufacturing at CAE, OneClick, and production machine learning including predictive maintenance and forecasting.">
     <link rel="canonical" href="https://hassanrezaee.com/work.html">
     <link rel="alternate" hreflang="en" href="https://hassanrezaee.com/work.html">
     <link rel="alternate" hreflang="fr" href="https://hassanrezaee.com/fr/work.html">
@@ -34,7 +34,7 @@
             <div class="nav__links" id="navLinks">
                 <a href="./" class="nav__link">Home</a>
                 <a href="work.html" class="nav__link nav__link--active">Work</a>
-                <a href="oneclick.html" class="nav__link"><img src="images/organizations/oneclick.png" alt="" class="brand-logo brand-logo--sm" width="16" height="16">OneClick</a>
+                <a href="oneclick.html" class="nav__link">OneClick</a>
                 <a href="research.html" class="nav__link">Research</a>
                 <a href="hobbies.html" class="nav__link">Outside work</a>
                 <a href="contact.html" class="nav__link">Contact</a>
@@ -61,7 +61,7 @@
             <div class="site-shell">
                 <p class="eyebrow">Selected engineering</p>
                 <h1 class="page-title">Work</h1>
-                <p class="page-intro">Cases from two environments: enterprise AI systems at CAE, and building OneClick as a technical co-founder. Official titles are unchanged. Some CAE work is described at a high level because it involves proprietary internal systems.</p>
+                <p class="page-intro">Two environments, written as systems rather than as a list of AI capabilities: enterprise agentic AI in manufacturing at CAE, and OneClick as a product I own end to end. Official title at CAE remains Data Scientist.</p>
             </div>
         </section>
 
@@ -69,54 +69,74 @@
             <div class="site-shell">
                 <article class="study" id="cae-agentic">
                     <p class="case__kicker">CAE · Data Scientist · 2022–present</p>
-                    <h2>Enterprise agentic workflows</h2>
-                    <p class="study__label">User and problem</p>
-                    <p class="prose">Internal manufacturing stakeholders needed systems that could use proprietary knowledge and interact with existing operational software, rather than leaving people to stitch answers together by hand.</p>
-                    <p class="study__label">Responsibility and collaborators</p>
-                    <p class="prose">I work across problem framing, system design, implementation, evaluation, and iteration with domain experts, architects, data scientists, data engineers, and software engineers. The official role remains Data Scientist; the work includes technical leadership inside those collaborations.</p>
-                    <p class="study__label">System approach</p>
-                    <p class="prose">Agentic workflows that retrieve proprietary knowledge, call deterministic tools, keep structured state, and return outputs for human review or downstream systems. Implementation spans model behaviour, application logic, data access, cloud deployment, and the user workflow around the system.</p>
-                    <p class="study__label">Decision</p>
-                    <p class="prose">Treat the language model as one component, not the system. Tools, retrieval, and approval boundaries carry the parts of the workflow that must stay deterministic or reviewable.</p>
-                    <p class="study__label">Evaluation and feedback</p>
-                    <p class="prose">Evaluation includes whether the system retrieves the right information, uses tools correctly, respects workflow constraints, and produces outputs that domain experts can actually use. Failure analysis and user review shape the next iteration.</p>
-                    <p class="study__label">Outcome and stage</p>
-                    <p class="prose">Active internal engineering. Integration and deployment continue with existing enterprise systems. Public description stays qualitative because the workflows and data are proprietary.</p>
-                    <p class="mt-3"><a href="ai.html" class="text-link">Technical notes →</a></p>
+                    <h2>Enterprise agentic AI in manufacturing</h2>
+                    <div class="study-split">
+                        <div>
+                            <p class="study__label">Context</p>
+                            <p class="prose">Internal manufacturing teams needed a reliable AI system for a complex, domain-specific operational workflow involving multiple roles and existing software.</p>
+                            <p class="study__label">Responsibility and collaborators</p>
+                            <p class="prose">I work across problem framing, architecture, implementation, evaluation, deployment, and iteration with manufacturing stakeholders, domain experts, architects, data scientists, data engineers, and software engineers. My official title remains Data Scientist; within the initiative, I provide technical leadership across the system’s development.</p>
+                            <p class="study__label">System approach</p>
+                            <p class="prose">The solution is a complex multi-agent application operating in a manufacturing environment. My work includes coordinating agent responsibilities, application logic, structured state, evaluation, human oversight, cloud deployment, and enterprise integration.</p>
+                            <p class="study__label">Engineering decision</p>
+                            <p class="prose">A central design decision was to treat language models as components inside controlled software rather than as autonomous systems. Reliability comes from clear boundaries, validation, review, and explicit failure handling.</p>
+                            <p class="study__label">Evaluation</p>
+                            <p class="prose">Evaluation focuses on task completion, consistency, constraint adherence, failure modes, and whether domain experts can use the system effectively. Findings from user review are incorporated into subsequent iterations.</p>
+                            <p class="study__label">Stage</p>
+                            <p class="prose">Active internal engineering work with manufacturing stakeholders. Deployment and integration continue.</p>
+                            <p class="mt-3"><a href="ai.html" class="text-link">How these systems are grounded, constrained, and evaluated →</a></p>
+                        </div>
+                        <div>
+                            <p class="study__label">Scope of contribution</p>
+                            <figure class="shot">
+                            <ul class="scope">
+                                <li>Technical architecture</li>
+                                <li>Multi-agent application engineering</li>
+                                <li>Evaluation and failure analysis</li>
+                                <li>Human oversight</li>
+                                <li>Cloud deployment</li>
+                                <li>Cross-functional delivery</li>
+                            </ul>
+                            </figure>
+                        </div>
+                    </div>
                 </article>
 
                 <article class="study" id="oneclick">
                     <p class="case__kicker">OneClick · Co-founder &amp; Technical Lead · 2024–present</p>
-                    <h2>Practice-management software with clinicians</h2>
-                    <p class="study__label">User and problem</p>
-                    <p class="prose">Independent mental-health professionals still depend on disconnected tools and repetitive administrative steps that do not match how they actually work.</p>
-                    <p class="study__label">Responsibility and collaborators</p>
-                    <p class="prose">I own customer discovery, clinician co-design, product decisions, architecture, full-stack engineering, infrastructure, security, integrations, deployment, and operations. The product is built with practicing clinicians. This work has been developed alongside CAE employment; it is not described here as full-time employment.</p>
-                    <p class="study__label">Product approach</p>
-                    <p class="prose">OneClick brings everyday practice-management workflows into a single administrative platform. Software automation reduces repetitive work. The product is not intended to replace professional clinical judgment.</p>
-                    <p class="study__label">Decision</p>
-                    <p class="prose">Keep the system administrative. Features are shaped by clinician feedback on workflow and usability rather than by adding clinical decision support.</p>
-                    <p class="study__label">Evaluation and feedback</p>
-                    <p class="prose">Repeated conversations, testing, and co-design with clinicians change workflow design, feature priorities, and technical trade-offs.</p>
-                    <p class="study__label">Outcome and stage</p>
-                    <p class="prose">Pre-launch. Preparing for launch.</p>
-                    <p class="mt-3"><a href="oneclick.html" class="text-link">Founder case →</a></p>
+                    <h2>Practice-management software I own end to end</h2>
+                    <div class="study-split">
+                        <div>
+                            <p class="prose mt-3">Independent mental-health professionals often manage scheduling, billing, receipts, reminders, and client information across disconnected tools. OneClick is the administrative platform I co-founded to collapse that work. It is not clinical documentation software.</p>
+                            <p class="prose">I own product decisions, architecture, engineering, security, deployment, and operations, alongside CAE work. The product was co-designed with practicing clinicians — seven rounds of sessions with 38 mental-health professionals.</p>
+                            <p class="prose">Public launch is planned for October 2026. The full product case, including interface screenshots, lives on the OneClick page.</p>
+                            <p class="mt-3"><a href="oneclick.html" class="text-link">OneClick product case →</a></p>
+                        </div>
+                        <figure class="shot">
+                            <img src="images/oneclick/share-calendar.png" width="1072" height="1184" alt="OneClick Share Calendar interface with demonstration client and session data">
+                            <figcaption>OneClick · demonstration data</figcaption>
+                        </figure>
+                    </div>
                 </article>
 
                 <article class="study" id="predictive-maintenance">
                     <p class="case__kicker">CAE · supporting case</p>
                     <h2>Predictive maintenance and forecasting</h2>
-                    <p class="study__label">User and problem</p>
-                    <p class="prose">Operational teams needed machine-learning systems for demand forecasting and predictive maintenance from complex time-series and equipment data.</p>
-                    <p class="study__label">Responsibility</p>
-                    <p class="prose">I designed, trained, validated, and helped put models into production workflows with domain experts and engineering counterparts.</p>
-                    <p class="study__label">Approach</p>
-                    <p class="prose">Deep-learning predictive maintenance, demand forecasting, large-scale data processing, scheduled inference, monitoring, and integration with operational systems. Related earlier CAE work included speech and language-model systems for noisy environments and technical documents.</p>
-                    <p class="study__label">Evaluation</p>
-                    <p class="prose">Validation, monitoring, and iteration with the people who used the forecasts and maintenance signals.</p>
-                    <p class="study__label">Stage</p>
-                    <p class="prose">Completed production machine-learning work that precedes the current agentic systems.</p>
-                    <p class="mt-3"><a href="ai.html#deployment" class="text-link">Production ML notes →</a></p>
+                    <div class="study-split">
+                        <div>
+                            <p class="prose mt-3">Before the current agentic work, operational teams needed machine-learning systems that could forecast demand and support maintenance decisions from complex time-series and equipment data.</p>
+                            <p class="prose">I designed, trained, validated, and helped put those models into production with domain experts and engineering counterparts: deep-learning predictive maintenance, demand forecasting, large-scale data processing, scheduled inference, and monitoring. Related earlier CAE work included speech and language-model systems for noisy environments and technical documents.</p>
+                            <p class="mt-3"><a href="ai.html#deployment" class="text-link">Production ML notes →</a></p>
+                        </div>
+                        <figure class="shot">
+                            <div class="cells">
+                                <p><strong>Problem</strong>Equipment and demand series that operations had to act on.</p>
+                                <p><strong>Model</strong>Deep-learning predictive maintenance and forecasting.</p>
+                                <p><strong>Evaluation</strong>Validation and monitoring with the people using the signals.</p>
+                                <p><strong>Outcome</strong>Scheduled inference in existing operational workflows.</p>
+                            </div>
+                        </figure>
+                    </div>
                 </article>
 
                 <div class="career">
@@ -132,7 +152,7 @@
                         <p class="meta">2024–present</p>
                         <div>
                             <h3>OneClick · Co-founder &amp; Technical Lead</h3>
-                            <p>Practice-management software, pre-launch, developed with clinicians alongside CAE work.</p>
+                            <p>Practice-management software, launch planned October 2026, developed with clinicians alongside CAE work.</p>
                         </div>
                     </div>
                     <div class="career-row">
